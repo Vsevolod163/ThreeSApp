@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Каталог-->
         <scene sceneID="6c4-Cg-UhV">
             <objects>
                 <viewController id="8Ca-RY-Gqe" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="zM9-4x-lJQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="TOu-Sb-NMI"/>
+                    <tabBarItem key="tabBarItem" title="Каталог" image="magnifyingglass" catalog="system" id="TOu-Sb-NMI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOT-nz-Aig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="594"/>
+            <point key="canvasLocation" x="774" y="630"/>
         </scene>
-        <!--Item-->
+        <!--Информация-->
         <scene sceneID="rhN-W6-UTl">
             <objects>
                 <viewController id="2F2-yv-vka" sceneMemberID="viewController">
@@ -34,11 +34,11 @@
                         <viewLayoutGuide key="safeArea" id="fQn-pZ-uVn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="R77-Gn-FUK"/>
+                    <tabBarItem key="tabBarItem" title="Информация" image="person.crop.circle" catalog="system" id="R77-Gn-FUK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozf-W6-CP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="594"/>
+            <point key="canvasLocation" x="1659" y="630"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YIB-Fd-Tm1">
@@ -60,6 +60,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
