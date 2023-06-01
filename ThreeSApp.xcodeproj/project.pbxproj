@@ -13,6 +13,7 @@
 		C624AAA729F060B900B459C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C624AAA529F060B900B459C5 /* Main.storyboard */; };
 		C624AAA929F060BA00B459C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C624AAA829F060BA00B459C5 /* Assets.xcassets */; };
 		C624AAAC29F060BA00B459C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C624AAAA29F060BA00B459C5 /* LaunchScreen.storyboard */; };
+		C69EDA3D2A293AC90041E5F8 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EDA3C2A293AC90041E5F8 /* ProductsListViewController.swift */; };
 		C6C58B6E29F317750017AC60 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C58B6D29F317750017AC60 /* Product.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		C624AAA829F060BA00B459C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C624AAAB29F060BA00B459C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C624AAAD29F060BA00B459C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69EDA3C2A293AC90041E5F8 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		C6C58B6D29F317750017AC60 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C624AAA329F060B900B459C5 /* ViewController.swift */,
+				C69EDA3C2A293AC90041E5F8 /* ProductsListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C624AAA429F060B900B459C5 /* ViewController.swift in Sources */,
+				C69EDA3D2A293AC90041E5F8 /* ProductsListViewController.swift in Sources */,
 				C6C58B6E29F317750017AC60 /* Product.swift in Sources */,
 				C624AAA029F060B900B459C5 /* AppDelegate.swift in Sources */,
 				C624AAA229F060B900B459C5 /* SceneDelegate.swift in Sources */,
