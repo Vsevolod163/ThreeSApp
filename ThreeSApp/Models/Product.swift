@@ -549,26 +549,437 @@ struct Product {
             ],
                 // MARK: - Thinners
             [
-                Product(name: "Разбавитель", brand: .sikkens, group: .thinner, price: "0 Р", description: "", documentation: "")
+                Product(
+                    name: "Plus Reducer Medium 1 л",
+                    brand: .sikkens,
+                    group: .thinner,
+                    price: "1753 Р",
+                    description: """
+                            376915 Plus Reducer Medium 1 л
+                            
+                            Разбавители серии Plus Reducers могут добавляться во многие материалы Sikkens – базовые покрытия, эмали, лаки, адгезионные грунты, грунты-наполнители и изоляторы.
+                            Для регулирования межслойной выдержки, в зависимости от температуры, выпускаются быстрый (Fast), средний (Medium), медленный (Slow) и очень медленный (Extra slow) разбавители.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "Plus Reducer Medium 5 л",
+                    brand: .sikkens,
+                    group: .thinner,
+                    price: "8063 Р",
+                    description: """
+                            377032 Plus Reducer Medium 5 л
+                        
+                            Разбавители серии Plus Reducers могут добавляться во многие материалы Sikkens – базовые покрытия, эмали, лаки, адгезионные грунты, грунты-наполнители и изоляторы.
+                            Для регулирования межслойной выдержки, в зависимости от температуры, выпускаются быстрый (Fast), средний (Medium), медленный (Slow) и очень медленный (Extra slow) разбавители.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "Plus Reducer Slow 1 л",
+                    brand: .sikkens,
+                    group: .thinner,
+                    price: "1786 Р",
+                    description: """
+                            376914 Plus Reducer Slow 1 л
+                            
+                            Разбавители серии Plus Reducers могут добавляться во многие материалы Sikkens – базовые покрытия, эмали, лаки, адгезионные грунты, грунты-наполнители и изоляторы.
+                            Для регулирования межслойной выдержки, в зависимости от температуры, выпускаются быстрый (Fast), средний (Medium), медленный (Slow) и очень медленный (Extra slow) разбавители.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "Plus Reducer Slow 5 л",
+                    brand: .sikkens,
+                    group: .thinner,
+                    price: "8213 Р",
+                    description: """
+                            376889 Plus Reducer Slow 5 л
+                            
+                            Разбавители серии Plus Reducers могут добавляться во многие материалы Sikkens – базовые покрытия, эмали, лаки, адгезионные грунты, грунты-наполнители и изоляторы.
+                            Для регулирования межслойной выдержки, в зависимости от температуры, выпускаются быстрый (Fast), средний (Medium), медленный (Slow) и очень медленный (Extra slow) разбавители.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "Plus Reducer Extra Slow 1 л",
+                    brand: .sikkens,
+                    group: .thinner,
+                    price: "1974 Р",
+                    description: """
+                            376913 Plus Reducer Extra Slow 1 л
+                        
+                            Разбавители серии Plus Reducers могут добавляться во многие материалы Sikkens – базовые покрытия, эмали, лаки, адгезионные грунты, грунты-наполнители и изоляторы.
+                            Для регулирования межслойной выдержки, в зависимости от температуры, выпускаются быстрый (Fast), средний (Medium), медленный (Slow) и очень медленный (Extra slow) разбавители.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "SRA Agent 1 л",
+                    brand: .sikkens,
+                    group: .thinner,
+                    price: "1625 Р",
+                    description: """
+                            376097 Для переходов SRA Agent 1 л
+                        
+                            Разбавитель для переходов SRA Agent.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "Multi Thinner Standard 5 л",
+                    brand: .lesonal,
+                    group: .thinner,
+                    price: "6902 Р",
+                    description: """
+                            376901 Multi Thinner Standard 5 л
+                        
+                            Универсальный разбавитель для использования при температуре до 25 °C.
+                            Используется с: 1K Etch Primer · 1K Primer Filler · 2K MS Clear Fast · 2K Epoxy Primer · 2K Filler 540 (шлифование) · 2K High Build Filler · 2K Graphite Filler · 2K Universal Plastic Primer · Basecoat SB · 2K HS Extra Clear · 2K MS Matting Clear.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "Fade Out Agent 1 л",
+                    brand: .lesonal,
+                    group: .thinner,
+                    price: "1702 Р",
+                    description: """
+                            376923 Fade Out Agent 1 л
+                        
+                            Средство для растворения краев избыточного распыления при исчезновении и смешивании для всех прозрачных покрытий и верхнего покрытия HS 420.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "110 Thinner Standard 1 л",
+                    brand: .wanda,
+                    group: .thinner,
+                    price: "1569 Р",
+                    description: """
+                            561161 110 Thinner Standard 1 л
+                        
+                            Универсальный разбавитель для регулировки вязкости грунтоввыравнивателей,лаков и эмалей. Подходит для проведения любого вида ремонта в разных погодных условиях.
+                            Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак. 850 Clear Easy, лак 830 Clear Matt , лак 860 Clear AS HS, базовое покрытие Wandabase MAX, покрывная эмаль 2K Topcoat 2K Max, грунт 600 Filler 4:1, грунт 630 2K Epoxy Primer, грунт 640 Filler Multi , грунт 650 Filler HB 5:1, грунт 670 Filler 4:1.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "110 Thinner Standard 5 л",
+                    brand: .wanda,
+                    group: .thinner,
+                    price: "6474 Р",
+                    description: """
+                            561162 110 Thinner Standard 5 л
+                        
+                            Универсальный разбавитель для регулировки вязкости грунтоввыравнивателей,лаков и эмалей. Подходит для проведения любого вида ремонта в разных погодных условиях.
+                            Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак. 850 Clear Easy, лак 830 Clear Matt , лак 860 Clear AS HS, базовое покрытие Wandabase MAX, покрывная эмаль 2K Topcoat 2K Max, грунт 600 Filler 4:1, грунт 630 2K Epoxy Primer, грунт 640 Filler Multi , грунт 650 Filler HB 5:1, грунт 670 Filler 4:1.
+                        """,
+                    documentation: ""
+                ),
+                Product(
+                    name: "150 Thinner Fade Out 1 л",
+                    brand: .wanda,
+                    group: .thinner,
+                    price: "1723 Р",
+                    description: """
+                            563898 150 Thinner Fade Out 1 л
+                        
+                            Растворитель для переходов 150 Thinner Fade Out разработан для растворения тонкой границы слоя лака на месте перехода. Идеальное решение для локального ремонта.
+                            Метод нанесения и технические детали описаны ниже. Этот растворитель можно использовать со всеми лаками и акриловой эмалью Wanda.
+                        """,
+                    documentation: "https://disk.yandex.ru/i/wAxOAEYe2MAdwA"
+                ),
+                Product(
+                    name: "170 Thinner Fade Out RTS 0.4 л",
+                    brand: .wanda,
+                    group: .thinner,
+                    price: "727 Р",
+                    description: """
+                            561154 170 Thinner Fade Out RTS 0.4 л (аэрозоль)
+                        
+                            Растворитель для переходов 170 Thinner Fade Out в аэрозольной упаковке, разработан для растворения тонкой границы слоя лака на месте перехода.
+                            Идеальное решение для локального ремонта. Метод нанесения и технические детали описаны ниже. Этот растворитель можно использовать со всеми лаками Wanda.
+                        """,
+                    documentation: "https://disk.yandex.ru/i/Hf1aoxkKBxzkXg"
+                ),
+                Product(
+                    name: "180 Accelerator 1 л",
+                    brand: .wanda,
+                    group: .thinner,
+                    price: "1397 Р",
+                    description: """
+                            561173 180 Accelerator 1 л
+                        
+                            Wanda 180 Accelerator разработан для улучшения сквозного отверждения и снижения времени сушки лаков Wanda, идеален для локального ремонта и окраски полной панели.
+                        """,
+                    documentation: "https://disk.yandex.ru/i/BygvMmL-AVv6pA"
+                )
             ],
+            
+            // MARK: - Hardeners
             [
-                Product(name: "Отвердитель", brand: .sikkens, group: .hardener, price: "0 Р", description: "", documentation: "")
+                Product(
+                    name: "Hardener P25 1 л",
+                    brand: .sikkens,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Hardener P25 5 л",
+                    brand: .sikkens,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Hardener P35 1 л",
+                    brand: .sikkens,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Autoclear Basiq HS Hardener Slow 1 л",
+                    brand: .sikkens,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Universal Hardener Standard 1 л",
+                    brand: .lesonal,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Hardener Epoxy Primer 0.5 л",
+                    brand: .lesonal,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "310 Hardener Standard 0.2 л",
+                    brand: .wanda,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "310 Hardener Standard 0.5 л",
+                    brand: .wanda,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "310 Hardener Standard 1 л",
+                    brand: .wanda,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "310 Hardener Standard 2.5 л",
+                    brand: .wanda,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "360 Hardener 2K Epoxy Primer 0.5 л",
+                    brand: .wanda,
+                    group: .hardener,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                )
             ],
+            
+            // MARK: - Putty
             [
-                Product(name: "Шпатлевка", brand: .sikkens, group: .putty, price: "0 Р", description: "", documentation: "")
+                Product(
+                    name: "500 Putty Multiuse (комплект) 1.8 кг",
+                    brand: .wanda,
+                    group: .putty,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "510 Putty Glass Fiber (комплект) 1.6 кг",
+                    brand: .wanda,
+                    group: .putty,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "520 Putty Plastic (комплект) 0.4 кг",
+                    brand: .wanda,
+                    group: .putty,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
             ],
+            
+            // MARK: - Additive
             [
-                Product(name: "Добавка", brand: .sikkens, group: .additive, price: "0 Р", description: "", documentation: "")
+                Product(
+                    name: "Autobase Plus Blending Agent 1 л",
+                    brand: .sikkens,
+                    group: .additive,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Elast-O-Actif 1 л",
+                    brand: .sikkens,
+                    group: .additive,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Blend-Prep 0.326 л",
+                    brand: .sikkens,
+                    group: .additive,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Flexible Additive 1 л",
+                    brand: .lesonal,
+                    group: .additive,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                )
             ],
+            
+            // MARK: - Degreaser
             [
-                Product(name: "Обезжириватель", brand: .sikkens, group: .degreaser, price: "0 Р", description: "", documentation: "")
+                Product(
+                    name: "M200 5 л",
+                    brand: .sikkens,
+                    group: .degreaser,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "M600 5 л",
+                    brand: .sikkens,
+                    group: .degreaser,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "M700 5 л",
+                    brand: .sikkens,
+                    group: .degreaser,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Antistatic Degreaser SB 5 л",
+                    brand: .lesonal,
+                    group: .degreaser,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Wandabase SB Degreaser 5 л",
+                    brand: .wanda,
+                    group: .degreaser,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Wandabase WB Degreaser 5 л",
+                    brand: .wanda,
+                    group: .degreaser,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                )
             ],
+            
+            // MARK: - Equipment
             [
-                Product(name: "Оборудование", brand: .sikkens, group: .equipment, price: "0 Р", description: "", documentation: "")
+                Product(
+                    name: "PA10-7",
+                    brand: .santint,
+                    group: .equipment,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Automatchic Vision",
+                    brand: .akzoNobel,
+                    group: .equipment,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Evolution Scale",
+                    brand: .sartorius,
+                    group: .equipment,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Color Universe",
+                    brand: .akzoNobel,
+                    group: .equipment,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                )
             ],
+            
+            // MARK: - Colorvation
             [
-                Product(name: "Сolorvation", brand: .sikkens, group: .colorvation, price: "0 Р", description: "", documentation: "")
-            ],
+                Product(
+                    name: "Mixit",
+                    brand: .akzoNobel,
+                    group: .colorvation,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                ),
+                Product(
+                    name: "Mixit Pro",
+                    brand: .akzoNobel,
+                    group: .colorvation,
+                    price: "0 Р",
+                    description: "",
+                    documentation: ""
+                )
+            ]
         ]
     }
     
@@ -578,6 +989,9 @@ enum Brand: String {
     case sikkens = "Sikkens"
     case lesonal = "Lesonal"
     case wanda = "Wanda"
+    case akzoNobel = "AkzoNobel"
+    case sartorius = "Sartorius"
+    case santint = "Santint"
 }
 
 enum Group: String {
