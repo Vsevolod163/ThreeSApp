@@ -38,9 +38,7 @@ final class ProductsListViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         filteredData = productsList
-        
         overrideUserInterfaceStyle = .light
         tableView.delegate = self
         tableView.rowHeight = 130
