@@ -32,7 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        DataManager.shared.createData()
+        if !UserDefaults.standard.bool(forKey: "done") {
+            DataManager.shared.createData()
+            UserDefaults.standard.set(true, forKey: "done")
+        }
         return true
     }
 }
