@@ -51,7 +51,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/rk-C2TUY15voIA"
         )
         storageManager.create(
-            name: "2K HS Extra Clear 5 л",
+            name: "Lesonal 2K HS Extra Clear 5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.varnish.rawValue,
             price: "12925 Р",
@@ -64,7 +64,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Rpj2tSFB-xxkNw"
         )
         storageManager.create(
-            name: "810 Clear AS 1 л",
+            name: "Wanda 810 Clear AS 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "1750 Р",
@@ -78,7 +78,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/0Mh03TNsFAEhaw"
         )
         storageManager.create(
-            name: "810 Clear AS 5 л",
+            name: "Wanda 810 Clear AS 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "7780 Р",
@@ -92,7 +92,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/0Mh03TNsFAEhaw"
         )
         storageManager.create(
-            name: "820 Clear AS Express 1 л",
+            name: "Wanda 820 Clear AS Express 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "1656 Р",
@@ -106,7 +106,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/0LPQYX8JEmzYig"
         )
         storageManager.create(
-            name: "820 Clear AS Express 5 л",
+            name: "Wanda 820 Clear AS Express 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "7347 Р",
@@ -120,7 +120,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/0LPQYX8JEmzYig"
         )
         storageManager.create(
-            name: "850 Clear Easy 1 л",
+            name: "Wanda 850 Clear Easy 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "1344 Р",
@@ -133,7 +133,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/ZEd1JZDm-zM4eA"
         )
         storageManager.create(
-            name: "850 Clear Easy 5 л",
+            name: "Wanda 850 Clear Easy 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "5855 Р",
@@ -146,7 +146,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/ZEd1JZDm-zM4eA"
         )
         storageManager.create(
-            name: "860 Clear AS HS 1 л",
+            name: "Wanda 860 Clear AS HS 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "1767 Р",
@@ -159,7 +159,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/x5MBwHptgkrJSQ"
         )
         storageManager.create(
-            name: "860 Clear AS HS 5 л",
+            name: "Wanda 860 Clear AS HS 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "7707 Р",
@@ -172,7 +172,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/x5MBwHptgkrJSQ"
         )
         storageManager.create(
-            name: "830 Clear Matt 1 л",
+            name: "Wanda 830 Clear Matt 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
             price: "1785 Р",
@@ -266,7 +266,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/0qJg5Kb-dGvfJA"
         )
         storageManager.create(
-            name: "1K Multi Plastic Primer 1 л",
+            name: "Lesonal 1K Multi Plastic Primer 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "3402 Р",
@@ -278,7 +278,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/W1t3LT32YL-IPQ"
         )
         storageManager.create(
-            name: "2K Epoxy Primer 1 л",
+            name: "Lesonal 2K Epoxy Primer 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2600 Р",
@@ -292,7 +292,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "1K Etch Primer 1 л",
+            name: "Lesonal 1K Etch Primer 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2474 Р",
@@ -304,7 +304,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/vHvqAHeAVn5ORw"
         )
         storageManager.create(
-            name: "2K High Build Filler White 1 л",
+            name: "Lesonal 2K High Build Filler White 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2280 Р",
@@ -316,7 +316,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/zqIYmvJAT7nWAw"
         )
         storageManager.create(
-            name: "2K High Build Filler Grey 1 л",
+            name: "Lesonal 2K High Build Filler Grey 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2280 Р",
@@ -328,7 +328,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/zqIYmvJAT7nWAw"
         )
         storageManager.create(
-            name: "2K High Build Filler Black 1 л",
+            name: "Lesonal 2K High Build Filler Black 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2280 Р",
@@ -340,7 +340,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/zqIYmvJAT7nWAw"
         )
         storageManager.create(
-            name: "2K Filler 540 White 1 л",
+            name: "Lesonal 2K Filler 540 White 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2863 Р",
@@ -354,7 +354,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Jnc8gg9Xm_gGmA"
         )
         storageManager.create(
-            name: "2K Filler 540 Grey 1 л",
+            name: "Lesonal 2K Filler 540 Grey 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2863 Р",
@@ -368,7 +368,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Jnc8gg9Xm_gGmA"
         )
         storageManager.create(
-            name: "2K Filler 540 Black 1 л",
+            name: "Lesonal 2K Filler 540 Black 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "2863 Р",
@@ -382,7 +382,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Jnc8gg9Xm_gGmA"
         )
         storageManager.create(
-            name: "2K Filler 540 White 3 л",
+            name: "Lesonal 2K Filler 540 White 3 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "8024 Р",
@@ -396,7 +396,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Jnc8gg9Xm_gGmA"
         )
         storageManager.create(
-            name: "2K Filler 540 Grey 3 л",
+            name: "Lesonal 2K Filler 540 Grey 3 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "8024 Р",
@@ -410,7 +410,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Jnc8gg9Xm_gGmA"
         )
         storageManager.create(
-            name: "2K Filler 540 Black 3 л",
+            name: "Lesonal 2K Filler 540 Black 3 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
             price: "8024 Р",
@@ -424,7 +424,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Jnc8gg9Xm_gGmA"
         )
         storageManager.create(
-            name: "610 1K Plastic Primer 1 л",
+            name: "Wanda 610 1K Plastic Primer 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "1478 Р",
@@ -436,7 +436,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/LQJsztKa13LeWQ"
         )
         storageManager.create(
-            name: "610 1K Plastic Primer RTS 0.4 л",
+            name: "Wanda 610 1K Plastic Primer RTS 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "888 Р",
@@ -448,7 +448,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/LQJsztKa13LeWQ"
         )
         storageManager.create(
-            name: "620 Primer Light Grey 0.4 л",
+            name: "Wanda 620 Primer Light Grey 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "812 Р",
@@ -461,7 +461,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Vf_MLgVUIuzzXw"
         )
         storageManager.create(
-            name: "620 Primer Dark Grey 0.4 л",
+            name: "Wanda 620 Primer Dark Grey 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "812 Р",
@@ -474,7 +474,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Vf_MLgVUIuzzXw"
         )
         storageManager.create(
-            name: "630 2K Epoxy Primer 1 л",
+            name: "Wanda 630 2K Epoxy Primer 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "1788 Р",
@@ -486,7 +486,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/-pgjm97skYbsDw"
         )
         storageManager.create(
-            name: "640 Filler Multi White 3 л",
+            name: "Wanda 640 Filler Multi White 3 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "6228 Р",
@@ -499,7 +499,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/RpngkQSDgA9dvg"
         )
         storageManager.create(
-            name: "640 Filler Multi Grey 3 л",
+            name: "Wanda 640 Filler Multi Grey 3 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "6228 Р",
@@ -512,7 +512,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/RpngkQSDgA9dvg"
         )
         storageManager.create(
-            name: "640 Filler Multi Black 3 л",
+            name: "Wanda 640 Filler Multi Black 3 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "6228 Р",
@@ -525,7 +525,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/RpngkQSDgA9dvg"
         )
         storageManager.create(
-            name: "660 1K Etch Primer 0.4 л",
+            name: "Wanda 660 1K Etch Primer 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
             price: "952 Р",
@@ -618,7 +618,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Multi Thinner Standard 5 л",
+            name: "Lesonal Multi Thinner Standard 5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.thinner.rawValue,
             price: "6902 Р",
@@ -631,7 +631,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Fade Out Agent 1 л",
+            name: "Lesonal Fade Out Agent 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.thinner.rawValue,
             price: "1702 Р",
@@ -643,7 +643,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "110 Thinner Standard 1 л",
+            name: "Wanda 110 Thinner Standard 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
             price: "1569 Р",
@@ -656,7 +656,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "110 Thinner Standard 5 л",
+            name: "Wanda 110 Thinner Standard 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
             price: "6474 Р",
@@ -669,7 +669,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "150 Thinner Fade Out 1 л",
+            name: "Wanda 150 Thinner Fade Out 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
             price: "1723 Р",
@@ -682,7 +682,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/wAxOAEYe2MAdwA"
         )
         storageManager.create(
-            name: "170 Thinner Fade Out RTS 0.4 л",
+            name: "Wanda 170 Thinner Fade Out RTS 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
             price: "727 Р",
@@ -695,7 +695,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Hf1aoxkKBxzkXg"
         )
         storageManager.create(
-            name: "180 Accelerator 1 л",
+            name: "Wanda 180 Accelerator 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
             price: "1397 Р",
@@ -716,8 +716,10 @@ final class DataManager {
             group: Group.hardener.rawValue,
             price: "3440 Р",
             definition: """
-                376881 Hardener P25 1 л.
-                Отвердители серии "P" являются многофункциональными отвердителями, которые могут использоваться в различных грунтах-наполнителях, покрывных эмалях и лаках системы Sikkens. Для регулирования скорости сушки используются быстрый (Р25) и медленный (Р35) отвердители.
+                    376881 Hardener P25 1 л.
+                    
+                    Отвердители серии "P" являются многофункциональными отвердителями, которые могут использоваться в различных грунтах-наполнителях, покрывных эмалях и лаках системы Sikkens.
+                    Для регулирования скорости сушки используются быстрый (Р25) и медленный (Р35) отвердители.
                 """,
             documentation: ""
         )
@@ -727,8 +729,10 @@ final class DataManager {
             group: Group.hardener.rawValue,
             price: "16426 Р",
             definition: """
-                376879 Hardener P25 5 л.
-                Отвердители серии "P" являются многофункциональными отвердителями, которые могут использоваться в различных грунтах-наполнителях, покрывных эмалях и лаках системы Sikkens. Для регулирования скорости сушки используются быстрый (Р25) и медленный (Р35) отвердители.
+                    376879 Hardener P25 5 л.
+                
+                    Отвердители серии "P" являются многофункциональными отвердителями, которые могут использоваться в различных грунтах-наполнителях, покрывных эмалях и лаках системы Sikkens.
+                    Для регулирования скорости сушки используются быстрый (Р25) и медленный (Р35) отвердители.
                 """,
             documentation: ""
         )
@@ -738,9 +742,10 @@ final class DataManager {
             group: Group.hardener.rawValue,
             price: "3446 Р",
             definition: """
-                376883 Hardener P35 1 л.
-                Отвердители серии "P" являются многофункциональными отвердителями, которые могут использоваться в различных грунтах-наполнителях, покрывных эмалях и лаках системы Sikkens. Для регулирования скорости сушки используются быстрый (Р25) и медленный (Р35) отвердители.
-
+                    376883 Hardener P35 1 л.
+                
+                    Отвердители серии "P" являются многофункциональными отвердителями, которые могут использоваться в различных грунтах-наполнителях, покрывных эмалях и лаках системы Sikkens.
+                Для регулирования скорости сушки используются быстрый (Р25) и медленный (Р35) отвердители.
                 """,
             documentation: ""
         )
@@ -750,85 +755,96 @@ final class DataManager {
             group: Group.hardener.rawValue,
             price: "3159 Р",
             definition: """
-                541979 Autoclear Basiq HS Hardener Slow 1 л.
-                Отвердитель для лака Autoclear Basiq HS Hardener.
+                    541979 Autoclear Basiq HS Hardener Slow 1 л.
+                
+                    Отвердитель для лака Autoclear Basiq HS Hardener.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "Universal Hardener Standard 1 л",
+            name: "Lesonal Universal Hardener Standard 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.hardener.rawValue,
             price: "2788 Р",
             definition: """
-                376926 Universal Hardener Standard 1 л.
-                Универсальный отвердитель для условий применения до 25°C.
+                    376926 Universal Hardener Standard 1 л.
+                
+                    Универсальный отвердитель для условий применения до 25°C.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "Hardener Epoxy Primer 0.5 л",
+            name: "Lesonal Hardener Epoxy Primer 0.5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.hardener.rawValue,
             price: "1984 Р",
             definition: """
-                376946 Hardener Epoxy Primer 0.5 л.
-                Специальный отвердитель для 2К эпоксидного грунта.
+                    376946 Hardener Epoxy Primer 0.5 л.
+                
+                    Специальный отвердитель для 2К эпоксидного грунта.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "310 Hardener Standard 0.2 л",
+            name: "Wanda 310 Hardener Standard 0.2 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
             price: "529 Р",
             definition: """
-                593946 310 Hardener Standard 0.2 л.
-                Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях. Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
+                    593946 310 Hardener Standard 0.2 л.
+                
+                    Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях.
+                    Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "310 Hardener Standard 0.5 л",
+            name: "Wanda 310 Hardener Standard 0.5 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
             price: "1057 Р",
             definition: """
-                561107 310 Hardener Standard 0.5 л.
-                Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях. Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
+                    561107 310 Hardener Standard 0.5 л.
+                    Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях.
+                    Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "310 Hardener Standard 1 л",
+            name: "Wanda 310 Hardener Standard 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
             price: "1931Р",
             definition: """
-                561121 310 Hardener Standard 1 л.
-                Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях. Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
+                    561121 310 Hardener Standard 1 л.
+                
+                    Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях.
+                    Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "310 Hardener Standard 2.5 л",
+            name: "Wanda 310 Hardener Standard 2.5 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
             price: "4277 Р",
             definition: """
-                561122 310 Hardener Standard 2.5 л.
-                Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях. Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
+                    561122 310 Hardener Standard 2.5 л.
+                
+                    Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях.
+                    Используется со следующими продуктами: лак 810 Clear AS, лак 820 Clear AS Express, лак 830 Clear Matt, лак 860 Clear AS HS, грунт 600 Filler 4:1, грунт 640 Filler Multi, покрывная эмаль 2K Topcoat MAX.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "360 Hardener 2K Epoxy Primer 0.5 л",
+            name: "Wanda 360 Hardener 2K Epoxy Primer 0.5 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
             price: "934 Р",
             definition: """
-                561138 360 Hardener 2K Epoxy Primer 0.5 л.
-                Специальный отвердитель для: эпоксидного грунта 630 2К.
+                    561138 360 Hardener 2K Epoxy Primer 0.5 л.
+                
+                    Специальный отвердитель для: эпоксидного грунта 630 2К.
                 """,
             documentation: ""
         )
@@ -837,35 +853,40 @@ final class DataManager {
     // MARK: - Putty
     
         storageManager.create(
-            name: "500 Putty Multiuse (комплект) 1.8 кг",
+            name: "Wanda 500 Putty Multiuse (комплект) 1.8 кг",
             brand: Brand.wanda.rawValue,
             group: Group.putty.rawValue,
             price: "1426 Р",
             definition: """
-                561183 510 Putty Glass Fiber (комплект) 1.6 кг.
-                Двухкомпонентная шпатлевка, армированная стекловолокном, предназначена для устранения глубоких и больших повреждений, может быть нанесена на любую поверхность.
+                    561183 510 Putty Glass Fiber (комплект) 1.6 кг.
+                
+                    Двухкомпонентная шпатлевка, армированная стекловолокном, предназначена для устранения глубоких и больших повреждений, может быть нанесена на любую поверхность.
                 """,
             documentation: "https://disk.yandex.ru/i/-XZ7WkJdfga3Eg"
         )
         storageManager.create(
-            name: "510 Putty Glass Fiber (комплект) 1.6 кг",
+            name: "Wanda 510 Putty Glass Fiber (комплект) 1.6 кг",
             brand: Brand.wanda.rawValue,
             group: Group.putty.rawValue,
             price: "1589 Р",
             definition: """
-                561185 500 Putty Multiuse (комплект) 1.8 кг.
-                Двухкомпонентная полиэфирная шпатлевка предназначена для устранения небольших повреждений и неровностей. Этот продукт имеет уникальные адгезионные свойства к различным материалам поверхности: сталь, оцинкованная сталь и алюминий.
+                    561185 500 Putty Multiuse (комплект) 1.8 кг.
+                
+                    Двухкомпонентная полиэфирная шпатлевка предназначена для устранения небольших повреждений и неровностей.
+                    Этот продукт имеет уникальные адгезионные свойства к различным материалам поверхности: сталь, оцинкованная сталь и алюминий.
                 """,
             documentation: "https://disk.yandex.ru/i/sC0HwzAE1hN15g"
         )
         storageManager.create(
-            name: "520 Putty Plastic (комплект) 0.4 кг",
+            name: "Wanda 520 Putty Plastic (комплект) 0.4 кг",
             brand: Brand.wanda.rawValue,
             group: Group.putty.rawValue,
             price: "841 Р",
             definition: """
-                561187 520 Putty Plastic (комплект) 0.4 кг.
-                Двухкомпонентная полиэфирная шпатлевка для устранения незначительных повреждений и неровностей на пластиковых деталях. Эта шпатлевка имеет идеальные адгезионные свойства ко всем типам пластика.
+                    561187 520 Putty Plastic (комплект) 0.4 кг.
+                
+                    Двухкомпонентная полиэфирная шпатлевка для устранения незначительных повреждений и неровностей на пластиковых деталях.
+                    Эта шпатлевка имеет идеальные адгезионные свойства ко всем типам пластика.
                 """,
             documentation: "https://disk.yandex.ru/i/lMTXDExcK4UHTw"
         )
@@ -879,8 +900,9 @@ final class DataManager {
             group: Group.additive.rawValue,
             price: "2280 Р",
             definition: """
-                376036 Autobase Plus Blending Agent 1 л.
-                Добавка для перехода Autobase Plus Blending Agent 1 л.
+                    376036 Autobase Plus Blending Agent 1 л.
+                
+                    Добавка для перехода Autobase Plus Blending Agent 1 л.
                 """,
             documentation: ""
         )
@@ -890,8 +912,10 @@ final class DataManager {
             group: Group.additive.rawValue,
             price: "2726 Р",
             definition: """
-                376934 Elast-O-Actif 1 л.
-                Пластифицирующая добавка, созданная для окраски автомобильных деталей из мягких видов пластика. Добавление ее в систему окраски обеспечивает пластичность покрытия, что позволяет ему выдержать деформацию детали без повреждений.
+                    376934 Elast-O-Actif 1 л.
+                
+                    Пластифицирующая добавка, созданная для окраски автомобильных деталей из мягких видов пластика.
+                    Добавление ее в систему окраски обеспечивает пластичность покрытия, что позволяет ему выдержать деформацию детали без повреждений.
                 """,
             documentation: "https://disk.yandex.ru/i/MH11em-PBCojeQ"
         )
@@ -901,19 +925,23 @@ final class DataManager {
             group: Group.additive.rawValue,
             price: "1786 Р",
             definition: """
-                517618 Blend-Prep 0.326 л.
-                Blend Prep является абразивной пастой специально разработанной для подготовки зоны перехода. Используйте пасту Blend Prep вместе с абразивным матирующим материалом для создания оптимальной адгезии в местах перехода базового покрытия, в местах выхода акриловой эмали и лакового слоя.
+                    517618 Blend-Prep 0.326 л.
+                
+                    Blend Prep является абразивной пастой специально разработанной для подготовки зоны перехода.
+                    Используйте пасту Blend Prep вместе с абразивным матирующим материалом для создания оптимальной адгезии в местах перехода базового покрытия, в местах выхода акриловой эмали и лакового слоя.
                 """,
             documentation: "https://disk.yandex.ru/i/RYmOIzLMNVxi-A"
         )
         storageManager.create(
-            name: "Flexible Additive 1 л",
+            name: "Lesonal Flexible Additive 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.additive.rawValue,
             price: "2827 Р",
             definition: """
-                376902 Flexible Additive 1 л.
-                Пластификатор Flexible Additive создан для использования с Lesonal 2K Topcoat, 2K MS Clear Fast, 2K HS Extra Clear, 2K High Build Filler and 2K Filler 540 Добавление этого продукта необходимо при ремонтной окраске деталей сделанных из мягкого или сверх мягкого типа пластика.
+                    376902 Flexible Additive 1 л.
+                
+                    Пластификатор Flexible Additive создан для использования с Lesonal 2K Topcoat, 2K MS Clear Fast, 2K HS Extra Clear, 2K High Build Filler and 2K Filler 540.
+                    Добавление этого продукта необходимо при ремонтной окраске деталей сделанных из мягкого или сверх мягкого типа пластика.
                 """,
             documentation: "https://disk.yandex.ru/i/3oPYpuXo-he5UQ"
         )
@@ -927,8 +955,10 @@ final class DataManager {
             group: Group.degreaser.rawValue,
             price: "4697 Р",
             definition: """
-                376050 M200 5 л.
-                Обезжириватель М200 на водной основе предназначен для удаления водорастворимых загрязнений. М200 используется только после очистки поверхности любым органическим обезжиривателем из ассортимента Sikkens.
+                    376050 M200 5 л.
+                
+                    Обезжириватель М200 на водной основе предназначен для удаления водорастворимых загрязнений.
+                    М200 используется только после очистки поверхности любым органическим обезжиривателем из ассортимента Sikkens.
                 """,
             documentation: "https://disk.yandex.ru/i/5zSuNMZy2v0FIA"
         )
@@ -938,8 +968,11 @@ final class DataManager {
             group: Group.degreaser.rawValue,
             price: "5295 Р",
             definition: """
-                376943 M600 5 л.
-                M600 – очиститель/обезжириватель общего назначения. Он подходит для очистки и обезжиривания голого металла, старых лакокрасочных покрытий, загрунтованных поверхностей и др. Этот обезжириватель наименее агрессивный среди обезжиривателей Sikkens на солвентной основе. M600 не рекомендуется использовать для обезжиривания автомобильных деталей сделанных из пластмассы и стекловолокна. Для этих целей следует использовать обежириватель M700 Anti Static Silicon Remover.
+                    376943 M600 5 л.
+                
+                    M600 – очиститель/обезжириватель общего назначения. Он подходит для очистки и обезжиривания голого металла, старых лакокрасочных покрытий, загрунтованных поверхностей и др.
+                    Этот обезжириватель наименее агрессивный среди обезжиривателей Sikkens на солвентной основе.
+                    M600 не рекомендуется использовать для обезжиривания автомобильных деталей сделанных из пластмассы и стекловолокна. Для этих целей следует использовать обежириватель M700 Anti Static Silicon Remover.
                 """,
             documentation: "https://disk.yandex.ru/i/l-jol1XsSVagsg"
         )
@@ -949,41 +982,51 @@ final class DataManager {
             group: Group.degreaser.rawValue,
             price: "5669 Р",
             definition: """
-                376945 M700 5 л.
-                М700 обладает свойствами обезжиривателя и антистатика, объединенными в одном продукте, может применяться при выполнении любых видов ремонтов в автосервисе, включая обработку деталей из пластика и слоистых ламинатов, так же применяется для очистки и обезжиривания старых покрытий, включая термопластичные акриловые. Подходит для обезжиривания при проведении всех подготовительных и окрасочных работ материалами Sikkens. М700 обладает агрессивными очищающими свойствами и может оказать воздействие на определенные грунты и лаки, свежие финишные покрытия. Проверяйте обрабатываемые поверхности на обратимость. М700 в сравнении с М600 имеет более медленную скорость испарения.
+                    376945 M700 5 л.
+                
+                    М700 обладает свойствами обезжиривателя и антистатика, объединенными в одном продукте, может применяться при выполнении любых видов ремонтов в автосервисе, включая обработку деталей из пластика и слоистых ламинатов, так же применяется для очистки и обезжиривания старых покрытий, включая термопластичные акриловые.
+                    Подходит для обезжиривания при проведении всех подготовительных и окрасочных работ материалами Sikkens.
+                    М700 обладает агрессивными очищающими свойствами и может оказать воздействие на определенные грунты и лаки, свежие финишные покрытия. Проверяйте обрабатываемые поверхности на обратимость. М700 в сравнении с М600 имеет более медленную скорость испарения.
                 """,
             documentation: "https://disk.yandex.ru/i/Be-YTgbzJZ4sFA"
         )
         storageManager.create(
-            name: "Antistatic Degreaser SB 5 л",
+            name: "Lesonal Antistatic Degreaser SB 5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.degreaser.rawValue,
             price: "4652 Р",
             definition: """
-                376925 Antistatic Degreaser SB 5 л.
-                Обезжириватель Antistatic Degreaser SB создан для очистки и обезжиривания поверхности детали. Этот продукт удаляет с поверхности загрязнения от жира, полировальных паст, масла и других загрязнений, содержащих силикон. Так же Antistatic Degreaser SB нейтрализует статическое напряжение на пластиковых деталях.
+                    376925 Antistatic Degreaser SB 5 л.
+                
+                    Обезжириватель Antistatic Degreaser SB создан для очистки и обезжиривания поверхности детали.
+                    Этот продукт удаляет с поверхности загрязнения от жира, полировальных паст, масла и других загрязнений, содержащих силикон.
+                    Так же Antistatic Degreaser SB нейтрализует статическое напряжение на пластиковых деталях.
                 """,
             documentation: "https://disk.yandex.ru/i/ZXU7rlULmH2P8g"
         )
         storageManager.create(
-            name: "Wandabase SB Degreaser 5 л",
+            name: "Wanda Wandabase SB Degreaser 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.degreaser.rawValue,
             price: "3278 Р",
             definition: """
-                561180 Wandabase SB Degreaser 5 л.
-                Обезжириватель на основе растворителей созданный для очистки и обезжиривания существующих покрытий, грунтов, грунтов-выравнивателей перед началом нанесения материалов. Этот обезжириватель удаляет загрязнения, полученные от масла, выхлопных газов, полировальных паст, силикона и т.д.
+                    561180 Wandabase SB Degreaser 5 л.
+                
+                    Обезжириватель на основе растворителей созданный для очистки и обезжиривания существующих покрытий, грунтов, грунтов-выравнивателей перед началом нанесения материалов.
+                    Этот обезжириватель удаляет загрязнения, полученные от масла, выхлопных газов, полировальных паст, силикона и т.д.
                 """,
             documentation: "https://disk.yandex.ru/i/a7rAd4tpGOhfYQ"
         )
         storageManager.create(
-            name: "Wandabase WB Degreaser 5 л",
+            name: "Wanda Wandabase WB Degreaser 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.degreaser.rawValue,
             price: "3278 Р",
             definition: """
-                561179 Wandabase WB Degreaser 5 л.
-                Обезжириватель на водной основе, предназначен для очистки и обезжиривания поверхности. Может быть применен для удаления загрязнений, растворимых водой, с поверхностей существующего покрытия, заводского ОЕМ грунта, грунтов-выравнивателей перед началом окраски.
+                    561179 Wandabase WB Degreaser 5 л.
+                
+                    Обезжириватель на водной основе, предназначен для очистки и обезжиривания поверхности.
+                    Может быть применен для удаления загрязнений, растворимых водой, с поверхностей существующего покрытия, заводского ОЕМ грунта, грунтов-выравнивателей перед началом окраски.
                 """,
             documentation: "https://disk.yandex.ru/i/fHE31gH07EDsfw"
         )
@@ -992,46 +1035,55 @@ final class DataManager {
     // MARK: - Equipment
     
         storageManager.create(
-            name: "PA10-7",
+            name: "Santint PA10-7",
             brand: Brand.santint.rawValue,
             group: Group.equipment.rawValue,
             price: "Цена по запросу 📲",
             definition: """
-                2005351 Santint PA10-7
-                Смесительная установка с автоматическим таймером. Дозаторные крышки-мешалки 1 л. и 3.75 л. поставляются отдельно. Время смешивания: 0-15 минут. Скорость: 72 об/мин.
+                    2005351 Santint PA10-7
+                
+                    Смесительная установка с автоматическим таймером.
+                    Дозаторные крышки-мешалки 1 л. и 3.75 л. поставляются отдельно.
+                    Время смешивания: 0-15 минут. Скорость: 72 об/мин.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "Automatchic Vision",
+            name: "AkzoNobel Automatchic Vision",
             brand: Brand.akzoNobel.rawValue,
             group: Group.equipment.rawValue,
             price: "Цена по запросу 📲",
             definition: """
-                2002956 Automatchic vision
-                Automatchic Vision – это уникальный, компактный и простой в использовании спектрофотометр, оснащенный Wi-Fi. С его помощью вы быстро и точно производите измерение цвета прямо на детали автомобиля. Полученные данные автоматически выгружаются на ваш компьютер для анализа и поиска идеальной формулы. Весь процесс занимает втрое меньше времени по сравнению с традиционной системой.
+                    2002956 Automatchic vision
+                
+                    Automatchic Vision – это уникальный, компактный и простой в использовании спектрофотометр, оснащенный Wi-Fi.
+                    С его помощью вы быстро и точно производите измерение цвета прямо на детали автомобиля.
+                    Полученные данные автоматически выгружаются на ваш компьютер для анализа и поиска идеальной формулы.
+                    Весь процесс занимает втрое меньше времени по сравнению с традиционной системой.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "Evolution Scale",
+            name: "Sartorius Evolution Scale",
             brand: Brand.sartorius.rawValue,
             group: Group.equipment.rawValue,
             price: "Цена по запросу 📲",
             definition: """
-                2006864 Sartorius Evolution Scale
-                Весы для смешивания красок Sartorius PMA.Evolution с грузоподъемностью 7500 г и разрешением 0,1 г для использования в невзрывоопасных (безопасных) зонах.
+                    2006864 Sartorius Evolution Scale
+                
+                    Весы для смешивания красок Sartorius PMA.Evolution с грузоподъемностью 7500 г и разрешением 0,1 г для использования в невзрывоопасных (безопасных) зонах.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "Color Universe",
+            name: "AkzoNobel Color Universe",
             brand: Brand.akzoNobel.rawValue,
             group: Group.equipment.rawValue,
             price: "Цена по запросу 📲",
             definition: """
-                2001459 Color Universe
-                Цветовая документация Color Universe организована в хроматическом порядке, веера сформированы по цветовым группам, чипы в цветовом веере располагаются интуитивно понятным способом – плавным переходом от темного к светлому, учитывая насыщенность цвета. При этом на один веер могут ссылаться цвета разных автопроизводителей (перекрестные ссылки). Color Universe является универсальной цветовой документацией и может применяться для идентификации любого цвета, представленного в линейках брендов Sikkens, Lesonal, Wanda. Для упрощения поиска необходимого цвета на обратной стороне чипа расположен QR код, сканирование которого в iMatchColor выдает формулу цвета, визуализированного на чипе. В данной цветовой документации представлены металликовые/перламутровые цвета (6 814 чипов) и солидные цвета (914 чипов). Для размещения документации  предназначены 2 шкафа (правый и левый).
+                    2001459 Color Universe
+                
+                    Цветовая документация Color Universe организована в хроматическом порядке, веера сформированы по цветовым группам, чипы в цветовом веере располагаются интуитивно понятным способом – плавным переходом от темного к светлому, учитывая насыщенность цвета. При этом на один веер могут ссылаться цвета разных автопроизводителей (перекрестные ссылки). Color Universe является универсальной цветовой документацией и может применяться для идентификации любого цвета, представленного в линейках брендов Sikkens, Lesonal, Wanda. Для упрощения поиска необходимого цвета на обратной стороне чипа расположен QR код, сканирование которого в iMatchColor выдает формулу цвета, визуализированного на чипе. В данной цветовой документации представлены металликовые/перламутровые цвета (6 814 чипов) и солидные цвета (914 чипов). Для размещения документации  предназначены 2 шкафа (правый и левый).
                 """,
             documentation: ""
         )
@@ -1040,22 +1092,25 @@ final class DataManager {
     // MARK: - Colorvation
     
         storageManager.create(
-            name: "Mixit",
+            name: "AkzoNobel Mixit",
             brand: Brand.akzoNobel.rawValue,
             group: Group.colorvation.rawValue,
             price: "",
             definition: """
-                MIXIT - это ультрабыстрая, удобная для пользователя онлайн программа, совместимая с различными устройствами (ПК, планшет, мобильный телефон), благодаря использованию революционной облачной технологии. В ней содержатся сведения о более чем двух миллионах цветов и вариантов. Информация обновляется в реальном времени по мере появления новых цветов автомобилей. В MIXIT также ведется учет всех выполненных вами заданий. Доступ к данным обеспечивается мгновенно с вашего ПК, планшета или мобильного телефона. Если вы корректируете формулу, то ваше изменение автоматически сохраняется в учетных данных.
+                    MIXIT - это ультрабыстрая, удобная для пользователя онлайн программа, совместимая с различными устройствами (ПК, планшет, мобильный телефон), благодаря использованию революционной облачной технологии. В ней содержатся сведения о более чем двух миллионах цветов и вариантов. Информация обновляется в реальном времени по мере появления новых цветов автомобилей.
+                    В MIXIT также ведется учет всех выполненных вами заданий. Доступ к данным обеспечивается мгновенно с вашего ПК, планшета или мобильного телефона. Если вы корректируете формулу, то ваше изменение автоматически сохраняется в учетных данных.
                 """,
             documentation: ""
         )
         storageManager.create(
-            name: "Mixit Pro",
+            name: "AkzoNobel Mixit Pro",
             brand: Brand.akzoNobel.rawValue,
             group: Group.colorvation.rawValue,
             price: "",
             definition: """
-                MIXIT PRO – это программное обеспечение для поиска формул и точного подбора цвета автомобиля. Устанавливается жесткий диск вашего ПК. Имеет локальную и серверную версии. Благодаря функции пошаговой помощи поиск и нахождение точной формулы становится простым и надежным. Кроме того, Mixit Pro имеет ряд дополнительных функций для организации эффективного процесса в кузовном цехе: назначение смесей в заказ-наряды, расчет необходимого объема материала (краска, лак, грунт) в заказ-наряде, управление запасами, формирование отчетов о материальных затратах и т.д.
+                    MIXIT PRO – это программное обеспечение для поиска формул и точного подбора цвета автомобиля. Устанавливается на жесткий диск вашего ПК. Имеет локальную и серверную версии.
+                    Благодаря функции пошаговой помощи поиск и нахождение точной формулы становится простым и надежным.
+                    Кроме того, Mixit Pro имеет ряд дополнительных функций для организации эффективного процесса в кузовном цехе: назначение смесей в заказ-наряды, расчет необходимого объема материала (краска, лак, грунт) в заказ-наряде, управление запасами, формирование отчетов о материальных затратах и т.д.
                 """,
             documentation: ""
         )
