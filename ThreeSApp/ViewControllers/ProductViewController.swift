@@ -20,7 +20,7 @@ final class ProductViewController: UIViewController {
         productImageView.image = UIImage(named: product.fullName)
         documentationButton.layer.cornerRadius = documentationButton.frame.height / 2
         descriptionOfProductLabel.text = """
-            \(product.description)
+            \(product.definition)
             
                 Цена: \(product.price)
             """
