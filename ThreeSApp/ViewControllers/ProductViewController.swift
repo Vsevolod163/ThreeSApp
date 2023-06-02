@@ -32,9 +32,24 @@ final class ProductViewController: UIViewController {
     }
     
     @IBAction private func documentationButtonPressed() {
-        if let url = URL(string: product.documentation) {
-           UIApplication.shared.open(url)
-       }
+        if product.documentation == "" {
+            showAlert(with: "Ошибка", and: "Для данного продукта нет технической документации")
+        } else {
+            if let url = URL(string: product.documentation) {
+                UIApplication.shared.open(url)
+            }
+        }
+    }
+    
+    private func showAlert(with title: String, and message: String) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
 }
 
