@@ -70,7 +70,7 @@
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-dK-ykD">
                                 <rect key="frame" x="16" y="99" width="288" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done"/>
                                 <connections>
                                     <outlet property="delegate" destination="8Ca-RY-Gqe" id="Ce7-EG-mts"/>
                                 </connections>
@@ -104,23 +104,111 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOT-nz-Aig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772.5" y="532.3943661971831"/>
+            <point key="canvasLocation" x="773" y="493"/>
         </scene>
         <!--Информация-->
         <scene sceneID="rhN-W6-UTl">
             <objects>
-                <viewController id="2F2-yv-vka" sceneMemberID="viewController">
+                <viewController id="2F2-yv-vka" customClass="ContactsViewController" customModule="ThreeSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KEq-xY-dfD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Three S" translatesAutoresizingMaskIntoConstraints="NO" id="5Sw-ds-F1K">
+                                <rect key="frame" x="16" y="46" width="288" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CeH-6F-M3O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ry-5W-byM">
+                                <rect key="frame" x="16" y="162" width="288" height="122"/>
+                                <string key="text">Компания "ТРИ С" была основана в 1999 году и по настоящее время является официальным дистрибьютором международного концерна AkzoNobel, его подразделения CAR REFINISHES. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XUe-3s-tiZ">
+                                <rect key="frame" x="16" y="300" width="288" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuQ-ct-hYc">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
+                                        <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Позвонить"/>
+                                        <connections>
+                                            <action selector="phoneButtonTapped" destination="2F2-yv-vka" eventType="touchUpInside" id="hR6-n1-r6K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wf-Ne-lZy">
+                                        <rect key="frame" x="148" y="0.0" width="140" height="50"/>
+                                        <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Адрес"/>
+                                        <connections>
+                                            <action selector="addressButtonPressed" destination="2F2-yv-vka" eventType="touchUpInside" id="yL7-cK-s2Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9oT-bp-7Rp"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d9-PC-XGI">
+                                <rect key="frame" x="16" y="358" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Видео"/>
+                                <connections>
+                                    <action selector="videoButtonPressed" destination="2F2-yv-vka" eventType="touchUpInside" id="8hB-9A-QKU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-cF-j2F">
+                                <rect key="frame" x="16" y="416" width="288" height="50"/>
+                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Определить дефект окраски"/>
+                                <connections>
+                                    <action selector="defectButtonPressed" destination="2F2-yv-vka" eventType="touchUpInside" id="1Jz-vT-Heg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fQn-pZ-uVn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Ry-5W-byM" firstAttribute="bottom" secondItem="KEq-xY-dfD" secondAttribute="centerY" id="0cf-hz-dxE"/>
+                            <constraint firstItem="aZd-cF-j2F" firstAttribute="width" secondItem="XUe-3s-tiZ" secondAttribute="width" multiplier="1:1" id="D5X-I1-Rpb"/>
+                            <constraint firstItem="aZd-cF-j2F" firstAttribute="top" secondItem="8d9-PC-XGI" secondAttribute="bottom" constant="8" id="DKI-kK-O77"/>
+                            <constraint firstItem="8d9-PC-XGI" firstAttribute="centerX" secondItem="KEq-xY-dfD" secondAttribute="centerX" id="Rre-uj-rxO"/>
+                            <constraint firstItem="fQn-pZ-uVn" firstAttribute="trailing" secondItem="XUe-3s-tiZ" secondAttribute="trailing" constant="16" id="aRF-Fw-Hzl"/>
+                            <constraint firstItem="8d9-PC-XGI" firstAttribute="top" secondItem="XUe-3s-tiZ" secondAttribute="bottom" constant="8" id="bE1-51-bIo"/>
+                            <constraint firstItem="8d9-PC-XGI" firstAttribute="width" secondItem="XUe-3s-tiZ" secondAttribute="width" multiplier="1:1" id="fUN-ot-9Vs"/>
+                            <constraint firstItem="4Ry-5W-byM" firstAttribute="top" secondItem="5Sw-ds-F1K" secondAttribute="bottom" constant="16" id="hib-l0-sw9"/>
+                            <constraint firstItem="4Ry-5W-byM" firstAttribute="leading" secondItem="fQn-pZ-uVn" secondAttribute="leading" constant="16" id="hxD-21-ZMT"/>
+                            <constraint firstItem="XUe-3s-tiZ" firstAttribute="leading" secondItem="fQn-pZ-uVn" secondAttribute="leading" constant="16" id="iWR-B7-sya"/>
+                            <constraint firstItem="aZd-cF-j2F" firstAttribute="height" secondItem="XUe-3s-tiZ" secondAttribute="height" multiplier="1:1" id="jyq-oe-LSy"/>
+                            <constraint firstItem="5Sw-ds-F1K" firstAttribute="leading" secondItem="fQn-pZ-uVn" secondAttribute="leading" constant="16" id="p84-5O-YHJ"/>
+                            <constraint firstItem="8d9-PC-XGI" firstAttribute="height" secondItem="XUe-3s-tiZ" secondAttribute="height" multiplier="1:1" id="pk9-Jg-rPH"/>
+                            <constraint firstItem="aZd-cF-j2F" firstAttribute="centerX" secondItem="KEq-xY-dfD" secondAttribute="centerX" id="rUX-KH-Qau"/>
+                            <constraint firstItem="fQn-pZ-uVn" firstAttribute="trailing" secondItem="4Ry-5W-byM" secondAttribute="trailing" constant="16" id="szc-b2-0Vp"/>
+                            <constraint firstItem="XUe-3s-tiZ" firstAttribute="top" secondItem="4Ry-5W-byM" secondAttribute="bottom" constant="16" id="tnI-OU-Smf"/>
+                            <constraint firstItem="fQn-pZ-uVn" firstAttribute="trailing" secondItem="5Sw-ds-F1K" secondAttribute="trailing" constant="16" id="ufH-iD-aqh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Информация" image="person.crop.circle" catalog="system" id="R77-Gn-FUK"/>
+                    <connections>
+                        <outlet property="defectButton" destination="aZd-cF-j2F" id="NsS-ns-aU9"/>
+                        <outlet property="mapButton" destination="9wf-Ne-lZy" id="oQw-kB-6Tz"/>
+                        <outlet property="phoneButton" destination="DuQ-ct-hYc" id="aQ9-RH-jCR"/>
+                        <outlet property="videoButton" destination="8d9-PC-XGI" id="ebV-4X-TSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozf-W6-CP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="532"/>
+            <point key="canvasLocation" x="1500" y="492"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="BLk-qj-X3S">
@@ -160,11 +248,11 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7C3-69-SdH">
                                                 <rect key="frame" x="16" y="286" width="288" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="DLU-ER-W5N" firstAttribute="top" secondItem="EJa-mu-Ct4" secondAttribute="top" constant="20" id="6ZT-1G-eKv"/>
                                             <constraint firstAttribute="trailing" secondItem="7C3-69-SdH" secondAttribute="trailing" constant="16" id="9S1-aw-otd"/>
@@ -189,7 +277,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GVM-rj-HlV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wiV-MP-7cY" firstAttribute="bottom" secondItem="GVM-rj-HlV" secondAttribute="bottom" id="8iY-6h-GDF"/>
                             <constraint firstItem="wiV-MP-7cY" firstAttribute="leading" secondItem="GVM-rj-HlV" secondAttribute="leading" id="Wdd-PD-fxr"/>
@@ -214,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BH1-4i-VnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772.5" y="2041.9014084507041"/>
+            <point key="canvasLocation" x="773" y="1974"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YIB-Fd-Tm1">
@@ -225,6 +313,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.96133008793969854" green="0.96133008793969854" blue="0.96133008793969854" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.74509803921568629" green="0.23137254901960785" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
@@ -252,7 +341,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gop-vO-iRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772.5" y="1311.9718309859154"/>
+            <point key="canvasLocation" x="773" y="1233"/>
         </scene>
     </scenes>
     <resources>
