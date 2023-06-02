@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C610C33C2A2A321C001DE9CE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C610C33B2A2A321C001DE9CE /* StorageManager.swift */; };
 		C624AAA029F060B900B459C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624AA9F29F060B900B459C5 /* AppDelegate.swift */; };
 		C624AAA229F060B900B459C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624AAA129F060B900B459C5 /* SceneDelegate.swift */; };
 		C624AAA429F060B900B459C5 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624AAA329F060B900B459C5 /* ProductViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C610C33B2A2A321C001DE9CE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		C624AA9C29F060B900B459C5 /* ThreeSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C624AA9F29F060B900B459C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C624AAA129F060B900B459C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C610C33A2A2A320C001DE9CE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C610C33B2A2A321C001DE9CE /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C624AA9329F060B900B459C5 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 				C624AAB329F060D800B459C5 /* Models */,
 				C624AAB629F060FE00B459C5 /* ViewControllers */,
 				C624AAB529F060F300B459C5 /* Storyboards */,
+				C610C33A2A2A320C001DE9CE /* Services */,
 				C624AAB429F060E400B459C5 /* App */,
 				C624AAA829F060BA00B459C5 /* Assets.xcassets */,
 			);
@@ -182,6 +193,7 @@
 				C624AAA429F060B900B459C5 /* ProductViewController.swift in Sources */,
 				C69EDA3D2A293AC90041E5F8 /* ProductsListViewController.swift in Sources */,
 				C6C58B6E29F317750017AC60 /* Product.swift in Sources */,
+				C610C33C2A2A321C001DE9CE /* StorageManager.swift in Sources */,
 				C624AAA029F060B900B459C5 /* AppDelegate.swift in Sources */,
 				C624AAA229F060B900B459C5 /* SceneDelegate.swift in Sources */,
 				C69EDA3F2A293BD40041E5F8 /* ContactsViewController.swift in Sources */,
