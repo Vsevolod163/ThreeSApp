@@ -13,7 +13,7 @@ final class DataManager {
     
     func createData() {
         storageManager.create(
-            name: "Autoclear Plus HS 1 л",
+            name: "Sikkens Autoclear Plus HS 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.varnish.rawValue,
             price: "2405 Р",
@@ -26,7 +26,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/7xrMnc9RxhazHw"
         )
         storageManager.create(
-            name: "Autoclear Plus HS 5 л",
+            name: "Sikkens Autoclear Plus HS 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.varnish.rawValue,
             price: "11070 Р",
@@ -39,7 +39,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/7xrMnc9RxhazHw"
         )
         storageManager.create(
-            name: "Autoclear Basiq HS 5 л",
+            name: "Sikkens Autoclear Basiq HS 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.varnish.rawValue,
             price: "9200 Р",
@@ -189,7 +189,7 @@ final class DataManager {
         // MARK: - Primers
     
         storageManager.create(
-            name: "Spotprimer Grey 0.4 л",
+            name: "Sikkens Spotprimer Grey 0.4 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
             price: "888 Р",
@@ -202,7 +202,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/haYrghdFzv4zbQ"
         )
         storageManager.create(
-            name: "1K ALL Plastics Primer 1 л",
+            name: "Sikkens 1K ALL Plastics Primer 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
             price: "2782 Р",
@@ -214,7 +214,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/yvHkIEqcTEwVjg"
         )
         storageManager.create(
-            name: "Colorbuild Plus White 3 л",
+            name: "Sikkens Colorbuild Plus White 3 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
             price: "9855 Р",
@@ -227,7 +227,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/hXdMzRyQ9mea6Q"
         )
         storageManager.create(
-            name: "Colorbuild Plus Black 3 л",
+            name: "Sikkens Colorbuild Plus Black 3 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
             price: "9855 Р",
@@ -240,7 +240,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/hXdMzRyQ9mea6Q"
         )
         storageManager.create(
-            name: "Autosurfacer HB 3 л",
+            name: "Sikkens Autosurfacer HB 3 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
             price: "6848 Р",
@@ -253,7 +253,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/Yv9zSv69pjG-dQ"
         )
         storageManager.create(
-            name: "Washprimer 1K CF-EF 1 л",
+            name: "Sikkens Washprimer 1K CF-EF 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
             price: "2809 Р",
@@ -541,7 +541,7 @@ final class DataManager {
         // MARK: - Thinners
     
         storageManager.create(
-            name: "Plus Reducer Medium 1 л",
+            name: "Sikkens Plus Reducer Medium 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
             price: "1753 Р",
@@ -554,7 +554,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Plus Reducer Medium 5 л",
+            name: "Sikkens Plus Reducer Medium 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
             price: "8063 Р",
@@ -567,7 +567,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Plus Reducer Slow 1 л",
+            name: "Sikkens Plus Reducer Slow 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
             price: "1786 Р",
@@ -580,7 +580,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Plus Reducer Slow 5 л",
+            name: "Sikkens Plus Reducer Slow 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
             price: "8213 Р",
@@ -593,7 +593,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Plus Reducer Extra Slow 1 л",
+            name: "Sikkens Plus Reducer Extra Slow 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
             price: "1974 Р",
@@ -606,7 +606,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "SRA Agent 1 л",
+            name: "Sikkens SRA Agent 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
             price: "1625 Р",
@@ -711,7 +711,7 @@ final class DataManager {
     // MARK: - Hardeners
     
         storageManager.create(
-            name: "Hardener P25 1 л",
+            name: "Sikkens Hardener P25 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
             price: "3440 Р",
@@ -722,7 +722,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Hardener P25 5 л",
+            name: "Sikkens Hardener P25 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
             price: "16426 Р",
@@ -733,7 +733,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Hardener P35 1 л",
+            name: "Sikkens Hardener P35 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
             price: "3446 Р",
@@ -745,7 +745,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Autoclear Basiq HS Hardener Slow 1 л",
+            name: "Sikkens Autoclear Basiq HS Hardener Slow 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
             price: "3159 Р",
@@ -874,7 +874,7 @@ final class DataManager {
     // MARK: - Additive
     
         storageManager.create(
-            name: "Autobase Plus Blending Agent 1 л",
+            name: "Sikkens Autobase Plus Blending Agent 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.additive.rawValue,
             price: "2280 Р",
@@ -885,7 +885,7 @@ final class DataManager {
             documentation: ""
         )
         storageManager.create(
-            name: "Elast-O-Actif 1 л",
+            name: "Sikkens Elast-O-Actif 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.additive.rawValue,
             price: "2726 Р",
@@ -896,7 +896,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/MH11em-PBCojeQ"
         )
         storageManager.create(
-            name: "Blend-Prep 0.326 л",
+            name: "Sikkens Blend-Prep 0.326 л",
             brand: Brand.sikkens.rawValue,
             group: Group.additive.rawValue,
             price: "1786 Р",
@@ -922,7 +922,7 @@ final class DataManager {
     // MARK: - Degreaser
     
         storageManager.create(
-            name: "M200 5 л",
+            name: "Sikkens M200 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.degreaser.rawValue,
             price: "4697 Р",
@@ -933,7 +933,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/5zSuNMZy2v0FIA"
         )
         storageManager.create(
-            name: "M600 5 л",
+            name: "Sikkens M600 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.degreaser.rawValue,
             price: "5295 Р",
@@ -944,7 +944,7 @@ final class DataManager {
             documentation: "https://disk.yandex.ru/i/l-jol1XsSVagsg"
         )
         storageManager.create(
-            name: "M700 5 л",
+            name: "Sikkens M700 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.degreaser.rawValue,
             price: "5669 Р",
