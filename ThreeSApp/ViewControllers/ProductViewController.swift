@@ -13,16 +13,16 @@ final class ProductViewController: UIViewController {
     @IBOutlet private var descriptionOfProductLabel: UILabel!
     @IBOutlet private var documentationButton: UIButton!
     
-    var product: Product!
+    var product: CurrentProduct!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        productImageView.image = UIImage(named: product.fullName)
+        productImageView.image = UIImage(named: product.name ?? "")
         documentationButton.layer.cornerRadius = documentationButton.frame.height / 2
         descriptionOfProductLabel.text = """
-            \(product.definition)
+            \(product.definition ?? "")
             
-                Цена: \(product.price)
+                Цена: \(product.price ?? "")
             """
         documentationButton.setTitle("Техническая документация", for: .normal)
     }
@@ -35,7 +35,7 @@ final class ProductViewController: UIViewController {
         if product.documentation == "" {
             showAlert(with: "Ошибка", and: "Для данного продукта нет технической документации")
         } else {
-            if let url = URL(string: product.documentation) {
+            if let url = URL(string: product.documentation ?? "") {
                 UIApplication.shared.open(url)
             }
         }

@@ -16,6 +16,7 @@ final class ProductsListViewController: UIViewController {
     @IBOutlet private var buttonsScrollView: UIScrollView!
     
     // MARK: - Private Properties
+    private let dataManager = DataManager.shared
     private let productsList = Product.getProducts()
     private let productGroups = Group.getAllGroups()
     private let selectedButtonBackgroundColor = UIColor(
@@ -31,7 +32,7 @@ final class ProductsListViewController: UIViewController {
         alpha: 1
     )
     
-    private var filteredData: [[Product]] = []
+    private var filteredData: [[CurrentProduct]] = []
     private var isContentScrolled = false
     private var isButtonTapped = false
 
@@ -45,6 +46,7 @@ final class ProductsListViewController: UIViewController {
         
         addButtonsToStackView()
         configureButtonsInStackView()
+//        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
     // MARK: - Navigation
@@ -80,7 +82,7 @@ final class ProductsListViewController: UIViewController {
         sender.setTitleColor(.white, for: .normal)
         
         for index in filteredData.indices {
-            let currentGroup = filteredData[index].first?.group.rawValue
+            let currentGroup = filteredData[index].first?.group
 
             if sender.currentTitle == currentGroup {
                 let indexPath = IndexPath(row: 0, section: index)
@@ -116,11 +118,11 @@ final class ProductsListViewController: UIViewController {
             button.widthAnchor.constraint(equalToConstant: 159).isActive = true
             button.heightAnchor.constraint(equalToConstant: 35).isActive = true
             
-            button.setTitle(group.first?.group.rawValue, for: .normal)
+            button.setTitle(group.first?.group, for: .normal)
             
             button.backgroundColor = simpleButtonBackgroundColor
             button.setTitleColor(.darkGray, for: .normal)
-            button.setTitle(group.first?.group.rawValue, for: .normal)
+            button.setTitle(group.first?.group, for: .normal)
             button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
             
             button.contentHorizontalAlignment = .center
@@ -209,7 +211,7 @@ extension ProductsListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        filteredData[section].first?.group.rawValue
+        filteredData[section].first?.group
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -221,9 +223,9 @@ extension ProductsListViewController: UITableViewDataSource {
         cell.selectionStyle = .none
         let material = filteredData[indexPath.section]
         var content = cell.defaultContentConfiguration()
-        content.text = material[indexPath.row].fullName
+        content.text = material[indexPath.row].name
         content.secondaryText = material[indexPath.row].price
-        content.image = UIImage(named: material[indexPath.row].fullName)
+        content.image = UIImage(named: material[indexPath.row].name ?? "")
         
         cell.contentConfiguration = content
         
@@ -268,7 +270,7 @@ extension ProductsListViewController: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        var filteredGroup: [Product] = []
+        var filteredGroup: [CurrentProduct] = []
         filteredData = []
         
         if searchText == "" {
@@ -277,7 +279,7 @@ extension ProductsListViewController: UISearchBarDelegate {
         } else {
             for group in productsList {
                 for product in group {
-                    if product.fullName.lowercased().contains(searchText.lowercased()) {
+                    if ((product.name?.lowercased().contains(searchText.lowercased())) != nil) {
                         filteredGroup.append(product)
                     }
                 }
