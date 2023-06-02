@@ -3,7 +3,7 @@
     <entity name="CurrentProduct" representedClassName="CurrentProduct" syncable="YES" codeGenerationType="class">
         <attribute name="brand" optional="YES" attributeType="String"/>
         <attribute name="definition" optional="YES" attributeType="String"/>
-        <attribute name="documantation" optional="YES" attributeType="String"/>
+        <attribute name="documentation" optional="YES" attributeType="String"/>
         <attribute name="group" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="String"/>
