@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ykK-lF-KWU">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -31,7 +32,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ws6-Iq-4r0">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="34.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -47,7 +48,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="Ev8-Yt-yLZ"/>
                             </scrollView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W8J-41-YGZ">
-                                <rect key="frame" x="0.0" y="190" width="320" height="378"/>
+                                <rect key="frame" x="0.0" y="198" width="320" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="product" id="qF4-d4-i9c">
@@ -78,7 +79,7 @@
                         <viewLayoutGuide key="safeArea" id="zM9-4x-lJQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="W8J-41-YGZ" firstAttribute="top" secondItem="CFt-QC-m2J" secondAttribute="bottom" id="2Nc-Tg-rXA"/>
+                            <constraint firstItem="W8J-41-YGZ" firstAttribute="top" secondItem="CFt-QC-m2J" secondAttribute="bottom" constant="8" id="2Nc-Tg-rXA"/>
                             <constraint firstAttribute="trailing" secondItem="W8J-41-YGZ" secondAttribute="trailing" id="2iN-CG-9aR"/>
                             <constraint firstItem="dmb-3N-NFI" firstAttribute="leading" secondItem="zM9-4x-lJQ" secondAttribute="leading" constant="16" id="AuF-6G-esf"/>
                             <constraint firstItem="W8J-41-YGZ" firstAttribute="leading" secondItem="s47-9e-R2b" secondAttribute="leading" id="HKA-FM-2Li"/>

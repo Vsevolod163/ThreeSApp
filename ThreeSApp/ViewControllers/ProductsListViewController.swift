@@ -89,7 +89,10 @@ final class ProductsListViewController: UIViewController {
                 if buttonsStackView.arrangedSubviews.count > 1 {
                     tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                     isContentScrolled = true
-                    scrollContent(with: index, and: subviews)
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+                        self?.scrollContent(with: index, and: subviews)
+                    }
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
                         self?.isContentScrolled = false
