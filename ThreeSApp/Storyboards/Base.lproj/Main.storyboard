@@ -37,6 +37,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="9Ix-L8-hbz" firstAttribute="trailing" secondItem="Cpx-9y-d9b" secondAttribute="trailing" constant="-16" id="8TR-33-KrM"/>
                                     <constraint firstAttribute="height" constant="35" id="WK6-lh-Men"/>
@@ -47,17 +48,18 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="Cpx-9y-d9b"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Ev8-Yt-yLZ"/>
                             </scrollView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W8J-41-YGZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W8J-41-YGZ">
                                 <rect key="frame" x="0.0" y="198" width="320" height="370"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="product" id="qF4-d4-i9c">
-                                        <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qF4-d4-i9c" id="v5c-l0-zFc">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="K5R-7V-M8c" kind="presentation" id="wGI-wJ-3pS"/>
                                         </connections>
@@ -70,7 +72,7 @@
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-dK-ykD">
                                 <rect key="frame" x="16" y="99" width="288" height="56"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
                                     <outlet property="delegate" destination="8Ca-RY-Gqe" id="Ce7-EG-mts"/>
                                 </connections>
@@ -222,7 +224,7 @@
                                 <rect key="frame" x="0.0" y="56" width="320" height="492"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-mu-Ct4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="412.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="416.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLU-ER-W5N">
                                                 <rect key="frame" x="16" y="20" width="288" height="250"/>
@@ -231,7 +233,7 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65b-J7-ch5">
-                                                <rect key="frame" x="25" y="322.5" width="270" height="50"/>
+                                                <rect key="frame" x="25" y="326.5" width="270" height="50"/>
                                                 <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="A4v-dd-Voi"/>
@@ -261,7 +263,7 @@
                                             <constraint firstAttribute="trailing" secondItem="DLU-ER-W5N" secondAttribute="trailing" constant="16" id="Vug-hi-Mh2"/>
                                             <constraint firstAttribute="bottom" secondItem="65b-J7-ch5" secondAttribute="bottom" constant="40" id="m54-G1-5uU"/>
                                             <constraint firstItem="65b-J7-ch5" firstAttribute="centerX" secondItem="EJa-mu-Ct4" secondAttribute="centerX" id="nMs-7j-vvX"/>
-                                            <constraint firstItem="65b-J7-ch5" firstAttribute="top" secondItem="7C3-69-SdH" secondAttribute="bottom" constant="16" id="spR-cQ-Bct"/>
+                                            <constraint firstItem="65b-J7-ch5" firstAttribute="top" secondItem="7C3-69-SdH" secondAttribute="bottom" constant="20" id="spR-cQ-Bct"/>
                                             <constraint firstItem="7C3-69-SdH" firstAttribute="leading" secondItem="EJa-mu-Ct4" secondAttribute="leading" constant="16" id="uL9-Db-ukk"/>
                                         </constraints>
                                     </view>
