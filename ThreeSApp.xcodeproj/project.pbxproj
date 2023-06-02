@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C610C33C2A2A321C001DE9CE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C610C33B2A2A321C001DE9CE /* StorageManager.swift */; };
+		C610C33E2A2A323E001DE9CE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C610C33D2A2A323E001DE9CE /* DataManager.swift */; };
 		C624AAA029F060B900B459C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624AA9F29F060B900B459C5 /* AppDelegate.swift */; };
 		C624AAA229F060B900B459C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624AAA129F060B900B459C5 /* SceneDelegate.swift */; };
 		C624AAA429F060B900B459C5 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624AAA329F060B900B459C5 /* ProductViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C610C33B2A2A321C001DE9CE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C610C33D2A2A323E001DE9CE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		C624AA9C29F060B900B459C5 /* ThreeSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C624AA9F29F060B900B459C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C624AAA129F060B900B459C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				C610C33B2A2A321C001DE9CE /* StorageManager.swift */,
+				C610C33D2A2A323E001DE9CE /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C624AAA429F060B900B459C5 /* ProductViewController.swift in Sources */,
+				C610C33E2A2A323E001DE9CE /* DataManager.swift in Sources */,
 				C69EDA3D2A293AC90041E5F8 /* ProductsListViewController.swift in Sources */,
 				C6C58B6E29F317750017AC60 /* Product.swift in Sources */,
 				C610C33C2A2A321C001DE9CE /* StorageManager.swift in Sources */,
