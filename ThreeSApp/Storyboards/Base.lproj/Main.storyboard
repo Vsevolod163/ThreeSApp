@@ -61,7 +61,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="K5R-7V-M8c" kind="presentation" id="wGI-wJ-3pS"/>
+                                            <segue destination="K5R-7V-M8c" kind="presentation" modalPresentationStyle="fullScreen" id="wGI-wJ-3pS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -213,44 +213,60 @@
             <point key="canvasLocation" x="1500" y="492"/>
         </scene>
         <!--Корзина-->
-        <scene sceneID="2nE-Wa-BtN">
+        <scene sceneID="3gC-ai-AYw">
             <objects>
-                <tableViewController id="cyK-6F-eh4" customClass="CartTableViewController" customModule="ThreeSApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="32g-hw-bnT">
+                <viewController id="ckt-zK-3EO" customClass="CartViewController" customModule="ThreeSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfO-w8-Vhx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productInCart" id="XPt-Xx-Ubm">
-                                <rect key="frame" x="0.0" y="38" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XPt-Xx-Ubm" id="QpI-OQ-wLD">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="cyK-6F-eh4" id="yZr-68-yYm"/>
-                            <outlet property="delegate" destination="cyK-6F-eh4" id="nS3-7J-1ry"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Корзина" id="Pqb-dw-7j3"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9rW-9L-GDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-Mi-HOS">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productInCart" id="Gum-T6-9RE">
+                                        <rect key="frame" x="0.0" y="38" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gum-T6-9RE" id="Rbc-Nc-8tg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ckt-zK-3EO" id="jKO-lp-WUQ"/>
+                                    <outlet property="delegate" destination="ckt-zK-3EO" id="Tz6-WS-GVI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ada-p4-JrJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ErF-Mi-HOS" firstAttribute="top" secondItem="ada-p4-JrJ" secondAttribute="top" id="OhY-8a-UOk"/>
+                            <constraint firstItem="ada-p4-JrJ" firstAttribute="bottom" secondItem="ErF-Mi-HOS" secondAttribute="bottom" id="XfW-NB-LzI"/>
+                            <constraint firstItem="ErF-Mi-HOS" firstAttribute="leading" secondItem="ada-p4-JrJ" secondAttribute="leading" id="n9K-v1-hvg"/>
+                            <constraint firstItem="ada-p4-JrJ" firstAttribute="trailing" secondItem="ErF-Mi-HOS" secondAttribute="trailing" id="tv1-Rw-e4g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Корзина" id="zKd-x3-agf"/>
+                    <connections>
+                        <outlet property="cartTableView" destination="ErF-Mi-HOS" id="W64-MC-wji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJK-2O-rcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2978" y="490"/>
+            <point key="canvasLocation" x="3038" y="490"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="BLk-qj-X3S">
             <objects>
                 <viewController id="fYo-0N-cLH" customClass="ProductViewController" customModule="ThreeSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amf-2l-urw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiV-MP-7cY">
-                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-mu-Ct4">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="474.5"/>
@@ -368,7 +384,7 @@
                     <connections>
                         <segue destination="8Ca-RY-Gqe" kind="relationship" relationship="viewControllers" id="wha-fD-l4B"/>
                         <segue destination="2F2-yv-vka" kind="relationship" relationship="viewControllers" id="pGR-2v-hgX"/>
-                        <segue destination="03i-3K-XBD" kind="relationship" relationship="viewControllers" id="dnk-BI-0Y2"/>
+                        <segue destination="8H1-aY-5Ll" kind="relationship" relationship="viewControllers" id="hqi-Zr-n3f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyH-82-GVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -381,7 +397,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K5R-7V-M8c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ds8-oG-TM0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -393,29 +409,28 @@
             </objects>
             <point key="canvasLocation" x="773" y="1233"/>
         </scene>
-        <!--Корзина-->
-        <scene sceneID="mnq-62-G4a">
+        <!--Item-->
+        <scene sceneID="Iih-m2-JPD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="03i-3K-XBD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Корзина" image="cart" catalog="system" id="6f5-G9-4uG"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8H1-aY-5Ll" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qlB-d4-oST"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="22M-ae-Xc4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="L29-UF-ssU">
                         <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="cyK-6F-eh4" kind="relationship" relationship="rootViewController" id="bcc-HB-3yL"/>
+                        <segue destination="ckt-zK-3EO" kind="relationship" relationship="rootViewController" id="nES-Rf-qoK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nHV-QU-YKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D08-dc-yoJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2242.5" y="490.14084507042253"/>
+            <point key="canvasLocation" x="2276.25" y="490.14084507042253"/>
         </scene>
     </scenes>
     <resources>
         <image name="Three S" width="736" height="265"/>
-        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
