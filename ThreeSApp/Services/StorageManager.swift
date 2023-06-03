@@ -93,6 +93,11 @@ final class StorageManager {
         saveContext()
     }
     
+    func deleteFromCart(_ product: CartProduct) {
+        viewContext.delete(product)
+        
+        saveContext()
+    }
     
     func saveContext() {
         if viewContext.hasChanges {
