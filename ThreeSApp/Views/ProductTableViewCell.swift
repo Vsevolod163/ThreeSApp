@@ -8,5 +8,16 @@
 import UIKit
 
 final class ProductTableViewCell: UITableViewCell {
-
+    @IBOutlet var productImageView: UIImageView!
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var countLabel: UILabel!
+    
+    func configure(with product: CartProduct) {
+        productImageView.image = UIImage(named: product.name ?? "")
+        nameLabel.text = product.name
+        priceLabel.text = "\(product.price) Р"
+        countLabel.text = "\(product.count) шт"
+    }
 }
