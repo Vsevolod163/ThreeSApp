@@ -84,7 +84,7 @@ final class StorageManager {
         saveContext()
     }
     
-    func delete(_ product: CurrentProduct) {
+    func delete(_ product: CartProduct) {
         viewContext.delete(product)
         
         saveContext()
