@@ -44,7 +44,6 @@ struct Product {
                 resultProducts[index].append(product)
             }
         }
-        print(resultProducts.last ?? [CurrentProduct].self)
         
         return resultProducts
     }
