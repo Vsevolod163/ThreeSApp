@@ -223,7 +223,7 @@ extension ProductsListViewController: UITableViewDataSource {
         let material = filteredData[indexPath.section]
         var content = cell.defaultContentConfiguration()
         content.text = material[indexPath.row].name
-        content.secondaryText = material[indexPath.row].price
+        content.secondaryText = "\(material[indexPath.row].price) Р"
         content.image = UIImage(named: material[indexPath.row].name ?? "")
         
         cell.contentConfiguration = content

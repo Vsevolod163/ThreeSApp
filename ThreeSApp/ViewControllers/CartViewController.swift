@@ -45,7 +45,7 @@ extension CartViewController: UITableViewDataSource {
         var content = cell.defaultContentConfiguration()
         
         content.text = product.name
-        content.secondaryText = product.price
+        content.secondaryText = String(product.price)
         content.image = UIImage(named: product.name ?? "")
         cell.contentConfiguration = content
          

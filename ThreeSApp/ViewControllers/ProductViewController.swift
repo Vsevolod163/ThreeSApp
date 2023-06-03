@@ -14,8 +14,9 @@ final class ProductViewController: UIViewController {
     @IBOutlet private var documentationButton: UIButton!
     @IBOutlet private var cartButton: UIButton!
     
-    private let storageManager = StorageManager.shared
     var product: CurrentProduct!
+    private let storageManager = StorageManager.shared
+    private var cartProducts: [CartProduct]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,9 @@ final class ProductViewController: UIViewController {
         descriptionOfProductLabel.text = """
             \(product.definition ?? "")
             
-                Цена: \(product.price ?? "")
+                Цена: \(product.price) Р
             """
+        fetchData()
     }
     
     @IBAction private func swipeButtonPressed(_ sender: UIBarButtonItem) {
@@ -44,14 +46,23 @@ final class ProductViewController: UIViewController {
     }
     
     @IBAction func addToCart() {
+        for cartProduct in cartProducts {
+            if cartProduct.name == product.name {
+                storageManager.update(cartProduct, currentProduct: product)
+                fetchData()
+                return
+            }
+        }
         storageManager.createCartProduct(
             name: product.name ?? "",
             brand: product.brand ?? "",
             group: product.group ?? "",
-            price: product.price ?? "",
+            price: product.price,
             definition: product.definition ?? "",
-            documentation: product.documentation ?? ""
+            documentation: product.documentation ?? "",
+            count: 1
         )
+        fetchData()
     }
     
     private func showAlert(with title: String, and message: String) {
@@ -63,6 +74,17 @@ final class ProductViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
+    }
+    
+    private func fetchData() {
+        StorageManager.shared.fetchCartData { result in
+            switch result {
+            case .success(let products):
+                cartProducts = products
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
