@@ -39,8 +39,32 @@ final class StorageManager {
         }
     }
     
+    func fetchCartData(completion: (Result<[CartProduct], Error>) -> Void) {
+        let fetchRequest = CartProduct.fetchRequest()
+        
+        do {
+            let productsInCart = try viewContext.fetch(fetchRequest)
+            completion(.success(productsInCart))
+        } catch let error {
+            completion(.failure(error))
+        }
+    }
+    
     func create(name: String, brand: String, group: String, price: String, definition: String, documentation: String) {
         let product = CurrentProduct(context: viewContext)
+        
+        product.name = name
+        product.brand = brand
+        product.group = group
+        product.price = price
+        product.definition = definition
+        product.documentation = documentation
+        
+        saveContext()
+    }
+    
+    func createCartProduct(name: String, brand: String, group: String, price: String, definition: String, documentation: String) {
+        let product = CartProduct(context: viewContext)
         
         product.name = name
         product.brand = brand
