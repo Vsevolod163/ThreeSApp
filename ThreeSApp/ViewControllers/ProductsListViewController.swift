@@ -279,7 +279,7 @@ extension ProductsListViewController: UISearchBarDelegate {
         } else {
             for group in productsList {
                 for product in group {
-                    if ((product.name?.lowercased().contains(searchText.lowercased())) != nil) {
+                    if product.name?.lowercased().contains(searchText.lowercased()) ?? false {
                         filteredGroup.append(product)
                     }
                 }
