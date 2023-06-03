@@ -41,7 +41,6 @@ final class ProductsListViewController: UIViewController {
         super.viewDidLoad()
         filteredData = productsList
         overrideUserInterfaceStyle = .light
-        tableView.delegate = self
         tableView.rowHeight = 130
         
         addButtonsToStackView()
