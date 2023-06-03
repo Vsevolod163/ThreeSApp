@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFt-QC-m2J">
-                                <rect key="frame" x="0.0" y="168.5" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="120" width="320" height="35"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Ix-L8-hbz">
                                         <rect key="frame" x="16" y="0.0" width="75" height="34.5"/>
@@ -43,7 +43,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="Ev8-Yt-yLZ"/>
                             </scrollView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W8J-41-YGZ">
-                                <rect key="frame" x="0.0" y="211.5" width="320" height="356.5"/>
+                                <rect key="frame" x="0.0" y="163" width="320" height="405"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="product" id="qF4-d4-i9c">
@@ -65,7 +65,7 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Поиск" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-dK-ykD">
-                                <rect key="frame" x="16" y="112.5" width="288" height="56"/>
+                                <rect key="frame" x="16" y="64" width="288" height="56"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
                                     <outlet property="delegate" destination="8Ca-RY-Gqe" id="oFl-n0-t9j"/>
@@ -216,7 +216,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productInCart" id="Gum-T6-9RE">
-                                        <rect key="frame" x="0.0" y="38" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gum-T6-9RE" id="Rbc-Nc-8tg">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -230,8 +230,8 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Корзина пуста" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-Fn-Qk9">
-                                <rect key="frame" x="71" y="268" width="178" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <rect key="frame" x="63.5" y="268" width="193" height="32.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -273,66 +273,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiV-MP-7cY">
-                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="342"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-mu-Ct4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="474.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="256.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLU-ER-W5N">
-                                                <rect key="frame" x="16" y="20" width="288" height="250"/>
+                                                <rect key="frame" x="16" y="20" width="288" height="200"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="250" id="pkq-Ue-TiD"/>
+                                                    <constraint firstAttribute="height" constant="200" id="pkq-Ue-TiD"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65b-J7-ch5">
-                                                <rect key="frame" x="25" y="326.5" width="270" height="50"/>
-                                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="A4v-dd-Voi"/>
-                                                    <constraint firstAttribute="height" constant="50" id="b8K-Hy-c2O"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Техническая документация"/>
-                                                <connections>
-                                                    <action selector="documentationButtonPressed" destination="fYo-0N-cLH" eventType="touchUpInside" id="fro-ot-082"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7C3-69-SdH">
-                                                <rect key="frame" x="16" y="286" width="288" height="20.5"/>
+                                                <rect key="frame" x="16" y="236" width="288" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8a-WT-Pbf">
-                                                <rect key="frame" x="25" y="384.5" width="270" height="50"/>
-                                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="fm6-LB-GvN"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="jFr-TV-9Dw"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Добавить в корзину"/>
-                                                <connections>
-                                                    <action selector="addToCart" destination="fYo-0N-cLH" eventType="touchUpInside" id="fl4-Sn-17k"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="DLU-ER-W5N" firstAttribute="top" secondItem="EJa-mu-Ct4" secondAttribute="top" constant="20" id="6ZT-1G-eKv"/>
                                             <constraint firstAttribute="trailing" secondItem="7C3-69-SdH" secondAttribute="trailing" constant="16" id="9S1-aw-otd"/>
-                                            <constraint firstItem="K8a-WT-Pbf" firstAttribute="centerX" secondItem="EJa-mu-Ct4" secondAttribute="centerX" id="AsX-nV-fcl"/>
                                             <constraint firstItem="DLU-ER-W5N" firstAttribute="leading" secondItem="EJa-mu-Ct4" secondAttribute="leading" constant="16" id="E9E-Ws-cAm"/>
                                             <constraint firstItem="7C3-69-SdH" firstAttribute="top" secondItem="DLU-ER-W5N" secondAttribute="bottom" constant="16" id="Hr3-Gp-bXP"/>
-                                            <constraint firstAttribute="bottom" secondItem="K8a-WT-Pbf" secondAttribute="bottom" constant="40" id="LOu-53-FwO"/>
+                                            <constraint firstAttribute="bottom" secondItem="7C3-69-SdH" secondAttribute="bottom" id="InH-Yx-MFd"/>
                                             <constraint firstAttribute="trailing" secondItem="DLU-ER-W5N" secondAttribute="trailing" constant="16" id="Vug-hi-Mh2"/>
-                                            <constraint firstItem="K8a-WT-Pbf" firstAttribute="top" secondItem="65b-J7-ch5" secondAttribute="bottom" constant="8" id="aj4-cr-S9b"/>
-                                            <constraint firstItem="65b-J7-ch5" firstAttribute="centerX" secondItem="EJa-mu-Ct4" secondAttribute="centerX" id="nMs-7j-vvX"/>
-                                            <constraint firstItem="65b-J7-ch5" firstAttribute="top" secondItem="7C3-69-SdH" secondAttribute="bottom" constant="20" id="spR-cQ-Bct"/>
                                             <constraint firstItem="7C3-69-SdH" firstAttribute="leading" secondItem="EJa-mu-Ct4" secondAttribute="leading" constant="16" id="uL9-Db-ukk"/>
                                         </constraints>
                                     </view>
@@ -346,15 +312,49 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="Dgj-1n-3xZ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="kIL-F2-4hM"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8a-WT-Pbf">
+                                <rect key="frame" x="25" y="478" width="270" height="50"/>
+                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="3LH-bg-C9E"/>
+                                    <constraint firstAttribute="height" constant="50" id="IxL-XD-omR"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить в корзину"/>
+                                <connections>
+                                    <action selector="addToCart" destination="fYo-0N-cLH" eventType="touchUpInside" id="fl4-Sn-17k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65b-J7-ch5">
+                                <rect key="frame" x="25" y="420" width="270" height="50"/>
+                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8SB-O4-J5K"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="Hlk-W0-A2i"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Техническая документация"/>
+                                <connections>
+                                    <action selector="documentationButtonPressed" destination="fYo-0N-cLH" eventType="touchUpInside" id="fro-ot-082"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GVM-rj-HlV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wiV-MP-7cY" firstAttribute="bottom" secondItem="GVM-rj-HlV" secondAttribute="bottom" id="8iY-6h-GDF"/>
+                            <constraint firstItem="wiV-MP-7cY" firstAttribute="bottom" secondItem="GVM-rj-HlV" secondAttribute="bottom" constant="-150" id="8iY-6h-GDF"/>
+                            <constraint firstItem="K8a-WT-Pbf" firstAttribute="centerX" secondItem="amf-2l-urw" secondAttribute="centerX" id="OCO-L3-u4g"/>
                             <constraint firstItem="wiV-MP-7cY" firstAttribute="leading" secondItem="GVM-rj-HlV" secondAttribute="leading" id="Wdd-PD-fxr"/>
                             <constraint firstItem="wiV-MP-7cY" firstAttribute="top" secondItem="GVM-rj-HlV" secondAttribute="top" id="akF-Sl-ufa"/>
                             <constraint firstItem="EJa-mu-Ct4" firstAttribute="width" secondItem="amf-2l-urw" secondAttribute="width" id="ddC-27-K9r"/>
+                            <constraint firstItem="GVM-rj-HlV" firstAttribute="bottom" secondItem="K8a-WT-Pbf" secondAttribute="bottom" constant="20" id="l9r-Qf-Mva"/>
+                            <constraint firstItem="65b-J7-ch5" firstAttribute="centerX" secondItem="amf-2l-urw" secondAttribute="centerX" id="mGq-Bt-RtX"/>
                             <constraint firstItem="wiV-MP-7cY" firstAttribute="trailing" secondItem="GVM-rj-HlV" secondAttribute="trailing" id="vF7-Ya-gRp"/>
+                            <constraint firstItem="K8a-WT-Pbf" firstAttribute="top" secondItem="65b-J7-ch5" secondAttribute="bottom" constant="8" id="wMn-55-Ka6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V5Y-FO-NBM">
@@ -423,8 +423,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8H1-aY-5Ll" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Корзина" image="cart" catalog="system" id="qlB-d4-oST"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="L29-UF-ssU">
-                        <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L29-UF-ssU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -449,8 +449,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8lR-8y-UNU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Каталог" image="magnifyingglass" catalog="system" id="TOu-Sb-NMI"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ba2-Qc-e2j">
-                        <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ba2-Qc-e2j">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
