@@ -7,14 +7,18 @@
 
 import UIKit
 
-final class CartTableViewController: UITableViewController {
-    private let storageManager = StorageManager.shared
-    private var productsInCart: [CartProduct] = []
+final class CartViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.rowHeight = 130
+    @IBOutlet var cartTableView: UITableView!
+    
+    var productsInCart: [CartProduct]!
+    private let storageManager = StorageManager.shared
+    
+    override func viewWillAppear(_ animated: Bool) {
+        overrideUserInterfaceStyle = .light
+        cartTableView.rowHeight = 130
         fetchData()
+        cartTableView.reloadData()
     }
     
     private func fetchData() {
@@ -29,14 +33,13 @@ final class CartTableViewController: UITableViewController {
     }
 }
     
-    
 // MARK: - TableViewDataSource
-extension CartTableViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension CartViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         productsInCart.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productInCart", for: indexPath)
         let product = productsInCart[indexPath.row]
         var content = cell.defaultContentConfiguration()
@@ -49,7 +52,7 @@ extension CartTableViewController {
         return cell
     }
  
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
          if editingStyle == .delete {
              storageManager.deleteFromCart(productsInCart[indexPath.row])
              productsInCart.remove(at: indexPath.row)
@@ -59,8 +62,8 @@ extension CartTableViewController {
 }
 
 // MARK: - TableViewDelegate
-extension CartTableViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+extension CartViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
