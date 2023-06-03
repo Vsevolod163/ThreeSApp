@@ -11,9 +11,11 @@ final class CartViewController: UIViewController {
     
     @IBOutlet var emptyCartLabel: UILabel!
     @IBOutlet var cartTableView: UITableView!
+    @IBOutlet var totalCostLabel: UILabel!
     
     var productsInCart: [CartProduct]!
     private let storageManager = StorageManager.shared
+    private var totalCost = 0
     
     override func viewWillAppear(_ animated: Bool) {
         overrideUserInterfaceStyle = .light
@@ -23,19 +25,23 @@ final class CartViewController: UIViewController {
         
         if productsInCart.isEmpty {
             emptyCartLabel.isHidden = false
+            totalCostLabel.isHidden = true
         } else {
             emptyCartLabel.isHidden = true
+            totalCostLabel.isHidden = false
         }
+        
+        setTotalCostLabelUI()
     }
     
     @IBAction func clearCart(_ sender: UIBarButtonItem) {
         for index in productsInCart.indices {
-            print(productsInCart.count)
             storageManager.delete(productsInCart[index])
         }
         productsInCart.removeAll()
         cartTableView.reloadData()
         emptyCartLabel.isHidden = false
+        totalCostLabel.isHidden = true
     }
     
     private func fetchData() {
@@ -48,6 +54,16 @@ final class CartViewController: UIViewController {
             }
         }
     }
+    
+    private func setTotalCostLabelUI() {
+        totalCost = 0
+        
+        for product in productsInCart {
+            totalCost += Int(product.price)
+        }
+        
+        totalCostLabel.text = "Итого \(totalCost) Р"
+    }
 }
     
 // MARK: - TableViewDataSource
@@ -57,14 +73,10 @@ extension CartViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "productInCart", for: indexPath)
-        let product = productsInCart[indexPath.row]
-        var content = cell.defaultContentConfiguration()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productInCart", for: indexPath) as! ProductTableViewCell
         
-        content.text = product.name
-        content.secondaryText = String(product.price)
-        content.image = UIImage(named: product.name ?? "")
-        cell.contentConfiguration = content
+        let product = productsInCart[indexPath.row]
+        cell.configure(with: product)
          
         return cell
     }
@@ -77,7 +89,10 @@ extension CartViewController: UITableViewDataSource {
              
              if productsInCart.isEmpty {
                  emptyCartLabel.isHidden = false
+                 totalCostLabel.isHidden = true
              }
+             
+             setTotalCostLabelUI()
          }
      }
 }
