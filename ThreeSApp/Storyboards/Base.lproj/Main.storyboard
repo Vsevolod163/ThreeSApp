@@ -61,7 +61,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="K5R-7V-M8c" kind="presentation" modalPresentationStyle="fullScreen" id="wGI-wJ-3pS"/>
+                                            <segue destination="K5R-7V-M8c" kind="presentation" id="wGI-wJ-3pS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -220,7 +220,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-Mi-HOS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-Mi-HOS">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -262,11 +262,11 @@
             <objects>
                 <viewController id="fYo-0N-cLH" customClass="ProductViewController" customModule="ThreeSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amf-2l-urw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiV-MP-7cY">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="492"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-mu-Ct4">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="474.5"/>
@@ -397,7 +397,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K5R-7V-M8c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ds8-oG-TM0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -409,15 +409,22 @@
             </objects>
             <point key="canvasLocation" x="773" y="1233"/>
         </scene>
-        <!--Item-->
+        <!--Корзина-->
         <scene sceneID="Iih-m2-JPD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8H1-aY-5Ll" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qlB-d4-oST"/>
+                    <tabBarItem key="tabBarItem" title="Корзина" image="cart" catalog="system" id="qlB-d4-oST"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="L29-UF-ssU">
                         <rect key="frame" x="0.0" y="20" width="320" height="92.5"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -431,6 +438,7 @@
     </scenes>
     <resources>
         <image name="Three S" width="736" height="265"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
