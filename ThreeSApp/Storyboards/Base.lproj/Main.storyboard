@@ -215,13 +215,13 @@
         <!--Корзина-->
         <scene sceneID="2nE-Wa-BtN">
             <objects>
-                <tableViewController id="cyK-6F-eh4" sceneMemberID="viewController">
+                <tableViewController id="cyK-6F-eh4" customClass="CartTableViewController" customModule="ThreeSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="32g-hw-bnT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XPt-Xx-Ubm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productInCart" id="XPt-Xx-Ubm">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XPt-Xx-Ubm" id="QpI-OQ-wLD">
@@ -253,7 +253,7 @@
                                 <rect key="frame" x="0.0" y="56" width="320" height="492"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-mu-Ct4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="416.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="474.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLU-ER-W5N">
                                                 <rect key="frame" x="16" y="20" width="288" height="250"/>
@@ -271,7 +271,7 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Техническая документация"/>
                                                 <connections>
                                                     <action selector="documentationButtonPressed" destination="fYo-0N-cLH" eventType="touchUpInside" id="fro-ot-082"/>
                                                 </connections>
@@ -282,15 +282,32 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8a-WT-Pbf">
+                                                <rect key="frame" x="25" y="384.5" width="270" height="50"/>
+                                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="fm6-LB-GvN"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="jFr-TV-9Dw"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Добавить в корзину"/>
+                                                <connections>
+                                                    <action selector="addToCart" destination="fYo-0N-cLH" eventType="touchUpInside" id="fl4-Sn-17k"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="DLU-ER-W5N" firstAttribute="top" secondItem="EJa-mu-Ct4" secondAttribute="top" constant="20" id="6ZT-1G-eKv"/>
                                             <constraint firstAttribute="trailing" secondItem="7C3-69-SdH" secondAttribute="trailing" constant="16" id="9S1-aw-otd"/>
+                                            <constraint firstItem="K8a-WT-Pbf" firstAttribute="centerX" secondItem="EJa-mu-Ct4" secondAttribute="centerX" id="AsX-nV-fcl"/>
                                             <constraint firstItem="DLU-ER-W5N" firstAttribute="leading" secondItem="EJa-mu-Ct4" secondAttribute="leading" constant="16" id="E9E-Ws-cAm"/>
                                             <constraint firstItem="7C3-69-SdH" firstAttribute="top" secondItem="DLU-ER-W5N" secondAttribute="bottom" constant="16" id="Hr3-Gp-bXP"/>
+                                            <constraint firstAttribute="bottom" secondItem="K8a-WT-Pbf" secondAttribute="bottom" constant="40" id="LOu-53-FwO"/>
                                             <constraint firstAttribute="trailing" secondItem="DLU-ER-W5N" secondAttribute="trailing" constant="16" id="Vug-hi-Mh2"/>
-                                            <constraint firstAttribute="bottom" secondItem="65b-J7-ch5" secondAttribute="bottom" constant="40" id="m54-G1-5uU"/>
+                                            <constraint firstItem="K8a-WT-Pbf" firstAttribute="top" secondItem="65b-J7-ch5" secondAttribute="bottom" constant="8" id="aj4-cr-S9b"/>
                                             <constraint firstItem="65b-J7-ch5" firstAttribute="centerX" secondItem="EJa-mu-Ct4" secondAttribute="centerX" id="nMs-7j-vvX"/>
                                             <constraint firstItem="65b-J7-ch5" firstAttribute="top" secondItem="7C3-69-SdH" secondAttribute="bottom" constant="20" id="spR-cQ-Bct"/>
                                             <constraint firstItem="7C3-69-SdH" firstAttribute="leading" secondItem="EJa-mu-Ct4" secondAttribute="leading" constant="16" id="uL9-Db-ukk"/>
@@ -326,6 +343,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cartButton" destination="K8a-WT-Pbf" id="Oyy-iC-cP4"/>
                         <outlet property="descriptionOfProductLabel" destination="7C3-69-SdH" id="57K-B6-pCS"/>
                         <outlet property="documentationButton" destination="65b-J7-ch5" id="5D3-L6-ztm"/>
                         <outlet property="productImageView" destination="DLU-ER-W5N" id="bUx-ZX-sOo"/>
