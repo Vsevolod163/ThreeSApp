@@ -12,19 +12,21 @@ final class ProductViewController: UIViewController {
     @IBOutlet private var productImageView: UIImageView!
     @IBOutlet private var descriptionOfProductLabel: UILabel!
     @IBOutlet private var documentationButton: UIButton!
+    @IBOutlet private var cartButton: UIButton!
     
+    private let storageManager = StorageManager.shared
     var product: CurrentProduct!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         productImageView.image = UIImage(named: product.name ?? "")
         documentationButton.layer.cornerRadius = documentationButton.frame.height / 2
+        cartButton.layer.cornerRadius = cartButton.frame.height / 2
         descriptionOfProductLabel.text = """
             \(product.definition ?? "")
             
                 Цена: \(product.price ?? "")
             """
-        documentationButton.setTitle("Техническая документация", for: .normal)
     }
     
     @IBAction private func swipeButtonPressed(_ sender: UIBarButtonItem) {
@@ -39,6 +41,17 @@ final class ProductViewController: UIViewController {
                 UIApplication.shared.open(url)
             }
         }
+    }
+    
+    @IBAction func addToCart() {
+        storageManager.createCartProduct(
+            name: product.name ?? "",
+            brand: product.brand ?? "",
+            group: product.group ?? "",
+            price: product.price ?? "",
+            definition: product.definition ?? "",
+            documentation: product.documentation ?? ""
+        )
     }
     
     private func showAlert(with title: String, and message: String) {
