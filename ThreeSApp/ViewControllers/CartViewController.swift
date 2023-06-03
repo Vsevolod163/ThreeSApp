@@ -9,6 +9,7 @@ import UIKit
 
 final class CartViewController: UIViewController {
     
+    @IBOutlet var emptyCartLabel: UILabel!
     @IBOutlet var cartTableView: UITableView!
     
     var productsInCart: [CartProduct]!
@@ -19,6 +20,22 @@ final class CartViewController: UIViewController {
         cartTableView.rowHeight = 130
         fetchData()
         cartTableView.reloadData()
+        
+        if productsInCart.isEmpty {
+            emptyCartLabel.isHidden = false
+        } else {
+            emptyCartLabel.isHidden = true
+        }
+    }
+    
+    @IBAction func clearCart(_ sender: UIBarButtonItem) {
+        for index in productsInCart.indices {
+            print(productsInCart.count)
+            storageManager.delete(productsInCart[index])
+        }
+        productsInCart.removeAll()
+        cartTableView.reloadData()
+        emptyCartLabel.isHidden = false
     }
     
     private func fetchData() {
@@ -57,6 +74,10 @@ extension CartViewController: UITableViewDataSource {
              storageManager.deleteFromCart(productsInCart[indexPath.row])
              productsInCart.remove(at: indexPath.row)
              tableView.deleteRows(at: [indexPath], with: .fade)
+             
+             if productsInCart.isEmpty {
+                 emptyCartLabel.isHidden = false
+             }
          }
      }
 }
