@@ -50,7 +50,7 @@ final class StorageManager {
         }
     }
     
-    func create(name: String, brand: String, group: String, price: String, definition: String, documentation: String) {
+    func create(name: String, brand: String, group: String, price: Int64, definition: String, documentation: String) {
         let product = CurrentProduct(context: viewContext)
         
         product.name = name
@@ -63,7 +63,7 @@ final class StorageManager {
         saveContext()
     }
     
-    func createCartProduct(name: String, brand: String, group: String, price: String, definition: String, documentation: String) {
+    func createCartProduct(name: String, brand: String, group: String, price: Int64, definition: String, documentation: String, count: Int64) {
         let product = CartProduct(context: viewContext)
         
         product.name = name
@@ -72,17 +72,14 @@ final class StorageManager {
         product.price = price
         product.definition = definition
         product.documentation = documentation
+        product.count = count
         
         saveContext()
     }
     
-    func update(_ product: CurrentProduct, name: String, brand: String, group: String, price: String, definition: String, documentation: String) {
-        product.name = name
-        product.brand = brand
-        product.group = group
-        product.price = price
-        product.definition = definition
-        product.documentation = documentation
+    func update(_ product: CartProduct, currentProduct: CurrentProduct) {
+        product.price = product.price + currentProduct.price
+        product.count = product.count + 1
         
         saveContext()
     }
