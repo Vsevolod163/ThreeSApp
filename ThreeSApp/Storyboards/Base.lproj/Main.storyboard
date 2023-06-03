@@ -229,6 +229,12 @@
                                     <outlet property="delegate" destination="ckt-zK-3EO" id="Tz6-WS-GVI"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Корзина пуста" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-Fn-Qk9">
+                                <rect key="frame" x="71" y="268" width="178" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ada-p4-JrJ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,12 +242,22 @@
                             <constraint firstItem="ErF-Mi-HOS" firstAttribute="top" secondItem="ada-p4-JrJ" secondAttribute="top" id="OhY-8a-UOk"/>
                             <constraint firstItem="ada-p4-JrJ" firstAttribute="bottom" secondItem="ErF-Mi-HOS" secondAttribute="bottom" id="XfW-NB-LzI"/>
                             <constraint firstItem="ErF-Mi-HOS" firstAttribute="leading" secondItem="ada-p4-JrJ" secondAttribute="leading" id="n9K-v1-hvg"/>
+                            <constraint firstItem="hMl-Fn-Qk9" firstAttribute="centerX" secondItem="dfO-w8-Vhx" secondAttribute="centerX" id="nFU-hK-HmZ"/>
+                            <constraint firstItem="hMl-Fn-Qk9" firstAttribute="centerY" secondItem="dfO-w8-Vhx" secondAttribute="centerY" id="nkd-Pu-nqg"/>
                             <constraint firstItem="ada-p4-JrJ" firstAttribute="trailing" secondItem="ErF-Mi-HOS" secondAttribute="trailing" id="tv1-Rw-e4g"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Корзина" id="zKd-x3-agf"/>
+                    <navigationItem key="navigationItem" title="Корзина" id="zKd-x3-agf">
+                        <barButtonItem key="rightBarButtonItem" image="trash" catalog="system" id="2TC-eZ-WLX">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="clearCart:" destination="ckt-zK-3EO" id="dKl-jf-SLa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cartTableView" destination="ErF-Mi-HOS" id="W64-MC-wji"/>
+                        <outlet property="emptyCartLabel" destination="hMl-Fn-Qk9" id="m2F-OL-HC4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJK-2O-rcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -369,7 +385,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.96133008793969854" green="0.96133008793969854" blue="0.96133008793969854" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="selectedImageTintColor" red="0.74509803921568629" green="0.23137254901960785" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
@@ -460,6 +476,7 @@
         <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
