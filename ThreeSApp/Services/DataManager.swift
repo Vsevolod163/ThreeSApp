@@ -16,7 +16,7 @@ final class DataManager {
             name: "Sikkens Autoclear Plus HS 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.varnish.rawValue,
-            price: "2405 Р",
+            price: 2405,
             definition: """
                     376960 Autoclear Plus HS 1 л
                 
@@ -29,7 +29,7 @@ final class DataManager {
             name: "Sikkens Autoclear Plus HS 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.varnish.rawValue,
-            price: "11070 Р",
+            price: 11070,
             definition: """
                     376960 Autoclear Plus HS 5 л
                 
@@ -42,7 +42,7 @@ final class DataManager {
             name: "Sikkens Autoclear Basiq HS 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.varnish.rawValue,
-            price: "9200 Р",
+            price: 9200,
             definition: """
                     376061 Autoclear Basiq HS 5 л
                 
@@ -54,7 +54,7 @@ final class DataManager {
             name: "Lesonal 2K HS Extra Clear 5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.varnish.rawValue,
-            price: "12925 Р",
+            price: 12925,
             definition: """
                     376895 2K HS Extra Clear 5 л
                 
@@ -67,7 +67,7 @@ final class DataManager {
             name: "Wanda 810 Clear AS 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "1750 Р",
+            price: 1750,
             definition: """
                     560946 810 Clear AS 1 л
                 
@@ -81,7 +81,7 @@ final class DataManager {
             name: "Wanda 810 Clear AS 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "7780 Р",
+            price: 7780,
             definition: """
                     560947 810 Clear AS 5 л
                 
@@ -95,7 +95,7 @@ final class DataManager {
             name: "Wanda 820 Clear AS Express 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "1656 Р",
+            price: 1656,
             definition: """
                     560939 820 Clear AS Express 1 л
                 
@@ -109,7 +109,7 @@ final class DataManager {
             name: "Wanda 820 Clear AS Express 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "7347 Р",
+            price: 7347,
             definition: """
                     560940 820 Clear AS Express 5 л
                 
@@ -123,7 +123,7 @@ final class DataManager {
             name: "Wanda 850 Clear Easy 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "1344 Р",
+            price: 1344,
             definition: """
                     560931 850 Clear Easy 1 л
                 
@@ -136,7 +136,7 @@ final class DataManager {
             name: "Wanda 850 Clear Easy 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "5855 Р",
+            price: 5855,
             definition: """
                     560932 850 Clear Easy 5 л
                 
@@ -149,7 +149,7 @@ final class DataManager {
             name: "Wanda 860 Clear AS HS 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "1767 Р",
+            price: 1767,
             definition: """
                     560962 860 Clear AS HS 1 л
                 
@@ -162,7 +162,7 @@ final class DataManager {
             name: "Wanda 860 Clear AS HS 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "7707 Р",
+            price: 7707,
             definition: """
                     569694 860 Clear AS HS 5 л
                 
@@ -175,7 +175,7 @@ final class DataManager {
             name: "Wanda 830 Clear Matt 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.varnish.rawValue,
-            price: "1785 Р",
+            price: 1785,
             definition: """
                     560953 830 Clear Matt 1 л
                 
@@ -192,7 +192,7 @@ final class DataManager {
             name: "Sikkens Spotprimer Grey 0.4 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
-            price: "888 Р",
+            price: 888,
             definition: """
                     376941 Spot Pimer Grey (Aerosol) 0.4 л
                 
@@ -205,7 +205,7 @@ final class DataManager {
             name: "Sikkens 1K ALL Plastics Primer 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
-            price: "2782 Р",
+            price: 2782,
             definition: """
                     376059 1K All Plastics Primer 1 л
                     
@@ -217,7 +217,7 @@ final class DataManager {
             name: "Sikkens Colorbuild Plus White 3 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
-            price: "9855 Р",
+            price: 9855,
             definition: """
                     376869 Colorbuild Plus Black 3 л
                     
@@ -230,7 +230,7 @@ final class DataManager {
             name: "Sikkens Colorbuild Plus Black 3 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
-            price: "9855 Р",
+            price: 9855,
             definition: """
                    376871 Colorbuild Plus Black 3 л
                 
@@ -243,7 +243,7 @@ final class DataManager {
             name: "Sikkens Autosurfacer HB 3 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
-            price: "6848 Р",
+            price: 6848,
             definition: """
                     376911 Autosurfacer HB 3 л
                     
@@ -256,7 +256,7 @@ final class DataManager {
             name: "Sikkens Washprimer 1K CF-EF 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.primer.rawValue,
-            price: "2809 Р",
+            price: 2809,
             definition: """
                     376051 Washprimer 1K CF-EF 1 л
                 
@@ -269,7 +269,7 @@ final class DataManager {
             name: "Lesonal 1K Multi Plastic Primer 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "3402 Р",
+            price: 3402,
             definition: """
                     376918 1K Multi Plastic Primer 1 л
                 
@@ -281,7 +281,7 @@ final class DataManager {
             name: "Lesonal 2K Epoxy Primer 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2600 Р",
+            price: 2600,
             definition: """
                     376929 2K Epoxy Primer 1 л
                 
@@ -295,7 +295,7 @@ final class DataManager {
             name: "Lesonal 1K Etch Primer 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2474 Р",
+            price: 2474,
             definition: """
                     376928 1K Etch Primer 1 л
                 
@@ -307,7 +307,7 @@ final class DataManager {
             name: "Lesonal 2K High Build Filler White 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2280 Р",
+            price: 2280,
             definition: """
                     376924 2K High Build Filler White 1 л
                 
@@ -319,7 +319,7 @@ final class DataManager {
             name: "Lesonal 2K High Build Filler Grey 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2280 Р",
+            price: 2280,
             definition: """
                     376892 2K High Build Filler Grey 1 л
                 
@@ -331,7 +331,7 @@ final class DataManager {
             name: "Lesonal 2K High Build Filler Black 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2280 Р",
+            price: 2280,
             definition: """
                     376922 2K High Build Filler Black 1 л
                 
@@ -343,7 +343,7 @@ final class DataManager {
             name: "Lesonal 2K Filler 540 White 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2863 Р",
+            price: 2863,
             definition: """
                     376877 2K Filler 540 White 1 л
                 
@@ -357,7 +357,7 @@ final class DataManager {
             name: "Lesonal 2K Filler 540 Grey 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2863 Р",
+            price: 2863,
             definition: """
                     376878 2K Filler 540 Grey 1 л
                 
@@ -371,7 +371,7 @@ final class DataManager {
             name: "Lesonal 2K Filler 540 Black 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "2863 Р",
+            price: 2863,
             definition: """
                     377169 2K Filler 540 Black 1 л
                 
@@ -385,7 +385,7 @@ final class DataManager {
             name: "Lesonal 2K Filler 540 White 3 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "8024 Р",
+            price: 8024,
             definition: """
                     376874 2K Filler 540 White 3 л
                 
@@ -399,7 +399,7 @@ final class DataManager {
             name: "Lesonal 2K Filler 540 Grey 3 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "8024 Р",
+            price: 8024,
             definition: """
                     376875 2K Filler 540 Grey 3 л
                 
@@ -413,7 +413,7 @@ final class DataManager {
             name: "Lesonal 2K Filler 540 Black 3 л",
             brand: Brand.lesonal.rawValue,
             group: Group.primer.rawValue,
-            price: "8024 Р",
+            price: 8024,
             definition: """
                     376876 2K Filler 540 Black 3 л
                 
@@ -427,7 +427,7 @@ final class DataManager {
             name: "Wanda 610 1K Plastic Primer 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "1478 Р",
+            price: 1478,
             definition: """
                     560965 610 1K Plastic Primer 1 л
                 
@@ -439,7 +439,7 @@ final class DataManager {
             name: "Wanda 610 1K Plastic Primer RTS 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "888 Р",
+            price: 888,
             definition: """
                     560966 610 1K Plastic Primer RTS 0.4 л
                 
@@ -451,7 +451,7 @@ final class DataManager {
             name: "Wanda 620 Primer Light Grey 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "812 Р",
+            price: 812,
             definition: """
                     560968 620 Primer Light Grey 0.4 л (аэрозоль)
                 
@@ -464,7 +464,7 @@ final class DataManager {
             name: "Wanda 620 Primer Dark Grey 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "812 Р",
+            price: 812,
             definition: """
                     560970 620 Primer Dark Grey 0.4 л (аэрозоль)
                 
@@ -477,7 +477,7 @@ final class DataManager {
             name: "Wanda 630 2K Epoxy Primer 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "1788 Р",
+            price: 1788,
             definition: """
                     561003 630 2K Epoxy Primer 1 л
                 
@@ -489,7 +489,7 @@ final class DataManager {
             name: "Wanda 640 Filler Multi White 3 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "6228 Р",
+            price: 6228,
             definition: """
                     561008 640 Filler Multi White 3 л
                 
@@ -502,7 +502,7 @@ final class DataManager {
             name: "Wanda 640 Filler Multi Grey 3 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "6228 Р",
+            price: 6228,
             definition: """
                     561008 640 Filler Multi Grey 3 л
                 
@@ -515,7 +515,7 @@ final class DataManager {
             name: "Wanda 640 Filler Multi Black 3 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "6228 Р",
+            price: 6228,
             definition: """
                     561012 640 Filler Multi Black 3 л
                 
@@ -528,7 +528,7 @@ final class DataManager {
             name: "Wanda 660 1K Etch Primer 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.primer.rawValue,
-            price: "952 Р",
+            price: 952,
             definition: """
                    561040 660 1K Etch Primer 0.4 л (аэрозоль)
                 
@@ -544,7 +544,7 @@ final class DataManager {
             name: "Sikkens Plus Reducer Medium 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
-            price: "1753 Р",
+            price: 1753,
             definition: """
                     376915 Plus Reducer Medium 1 л
                     
@@ -557,7 +557,7 @@ final class DataManager {
             name: "Sikkens Plus Reducer Medium 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
-            price: "8063 Р",
+            price: 8063,
             definition: """
                     377032 Plus Reducer Medium 5 л
                 
@@ -570,7 +570,7 @@ final class DataManager {
             name: "Sikkens Plus Reducer Slow 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
-            price: "1786 Р",
+            price: 1786,
             definition: """
                     376914 Plus Reducer Slow 1 л
                     
@@ -583,7 +583,7 @@ final class DataManager {
             name: "Sikkens Plus Reducer Slow 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
-            price: "8213 Р",
+            price: 8213,
             definition: """
                     376889 Plus Reducer Slow 5 л
                     
@@ -596,7 +596,7 @@ final class DataManager {
             name: "Sikkens Plus Reducer Extra Slow 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
-            price: "1974 Р",
+            price: 1974,
             definition: """
                     376913 Plus Reducer Extra Slow 1 л
                 
@@ -609,7 +609,7 @@ final class DataManager {
             name: "Sikkens SRA Agent 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.thinner.rawValue,
-            price: "1625 Р",
+            price: 1625,
             definition: """
                     376097 Для переходов SRA Agent 1 л
                 
@@ -621,7 +621,7 @@ final class DataManager {
             name: "Lesonal Multi Thinner Standard 5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.thinner.rawValue,
-            price: "6902 Р",
+            price: 6902,
             definition: """
                     376901 Multi Thinner Standard 5 л
                 
@@ -634,7 +634,7 @@ final class DataManager {
             name: "Lesonal Fade Out Agent 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.thinner.rawValue,
-            price: "1702 Р",
+            price: 1702,
             definition: """
                     376923 Fade Out Agent 1 л
                 
@@ -646,7 +646,7 @@ final class DataManager {
             name: "Wanda 110 Thinner Standard 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
-            price: "1569 Р",
+            price: 1569,
             definition: """
                     561161 110 Thinner Standard 1 л
                 
@@ -659,7 +659,7 @@ final class DataManager {
             name: "Wanda 110 Thinner Standard 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
-            price: "6474 Р",
+            price: 6474,
             definition: """
                     561162 110 Thinner Standard 5 л
                 
@@ -672,7 +672,7 @@ final class DataManager {
             name: "Wanda 150 Thinner Fade Out 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
-            price: "1723 Р",
+            price: 1723,
             definition: """
                     563898 150 Thinner Fade Out 1 л
                 
@@ -685,7 +685,7 @@ final class DataManager {
             name: "Wanda 170 Thinner Fade Out RTS 0.4 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
-            price: "727 Р",
+            price: 727,
             definition: """
                     561154 170 Thinner Fade Out RTS 0.4 л (аэрозоль)
                 
@@ -698,7 +698,7 @@ final class DataManager {
             name: "Wanda 180 Accelerator 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.thinner.rawValue,
-            price: "1397 Р",
+            price: 1397,
             definition: """
                     561173 180 Accelerator 1 л
                 
@@ -714,7 +714,7 @@ final class DataManager {
             name: "Sikkens Hardener P25 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
-            price: "3440 Р",
+            price: 3440,
             definition: """
                     376881 Hardener P25 1 л.
                     
@@ -727,7 +727,7 @@ final class DataManager {
             name: "Sikkens Hardener P25 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
-            price: "16426 Р",
+            price: 16426,
             definition: """
                     376879 Hardener P25 5 л.
                 
@@ -740,7 +740,7 @@ final class DataManager {
             name: "Sikkens Hardener P35 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
-            price: "3446 Р",
+            price: 3446,
             definition: """
                     376883 Hardener P35 1 л.
                 
@@ -753,7 +753,7 @@ final class DataManager {
             name: "Sikkens Autoclear Basiq HS Hardener Slow 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.hardener.rawValue,
-            price: "3159 Р",
+            price: 3159,
             definition: """
                     541979 Autoclear Basiq HS Hardener Slow 1 л.
                 
@@ -765,7 +765,7 @@ final class DataManager {
             name: "Lesonal Universal Hardener Standard 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.hardener.rawValue,
-            price: "2788 Р",
+            price: 2788,
             definition: """
                     376926 Universal Hardener Standard 1 л.
                 
@@ -777,7 +777,7 @@ final class DataManager {
             name: "Lesonal Hardener Epoxy Primer 0.5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.hardener.rawValue,
-            price: "1984 Р",
+            price: 1984,
             definition: """
                     376946 Hardener Epoxy Primer 0.5 л.
                 
@@ -789,7 +789,7 @@ final class DataManager {
             name: "Wanda 310 Hardener Standard 0.2 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
-            price: "529 Р",
+            price: 529,
             definition: """
                     593946 310 Hardener Standard 0.2 л.
                 
@@ -802,7 +802,7 @@ final class DataManager {
             name: "Wanda 310 Hardener Standard 0.5 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
-            price: "1057 Р",
+            price: 1057,
             definition: """
                     561107 310 Hardener Standard 0.5 л.
                     Универсальный стандартный отвердитель, подходящий для любого вида ремонта в разных погодных условиях.
@@ -814,7 +814,7 @@ final class DataManager {
             name: "Wanda 310 Hardener Standard 1 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
-            price: "1931Р",
+            price: 193,
             definition: """
                     561121 310 Hardener Standard 1 л.
                 
@@ -827,7 +827,7 @@ final class DataManager {
             name: "Wanda 310 Hardener Standard 2.5 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
-            price: "4277 Р",
+            price: 4277,
             definition: """
                     561122 310 Hardener Standard 2.5 л.
                 
@@ -840,7 +840,7 @@ final class DataManager {
             name: "Wanda 360 Hardener 2K Epoxy Primer 0.5 л",
             brand: Brand.wanda.rawValue,
             group: Group.hardener.rawValue,
-            price: "934 Р",
+            price: 934,
             definition: """
                     561138 360 Hardener 2K Epoxy Primer 0.5 л.
                 
@@ -856,7 +856,7 @@ final class DataManager {
             name: "Wanda 500 Putty Multiuse (комплект) 1.8 кг",
             brand: Brand.wanda.rawValue,
             group: Group.putty.rawValue,
-            price: "1426 Р",
+            price: 1426,
             definition: """
                     561183 510 Putty Glass Fiber (комплект) 1.6 кг.
                 
@@ -868,7 +868,7 @@ final class DataManager {
             name: "Wanda 510 Putty Glass Fiber (комплект) 1.6 кг",
             brand: Brand.wanda.rawValue,
             group: Group.putty.rawValue,
-            price: "1589 Р",
+            price: 1589,
             definition: """
                     561185 500 Putty Multiuse (комплект) 1.8 кг.
                 
@@ -881,7 +881,7 @@ final class DataManager {
             name: "Wanda 520 Putty Plastic (комплект) 0.4 кг",
             brand: Brand.wanda.rawValue,
             group: Group.putty.rawValue,
-            price: "841 Р",
+            price: 841,
             definition: """
                     561187 520 Putty Plastic (комплект) 0.4 кг.
                 
@@ -898,7 +898,7 @@ final class DataManager {
             name: "Sikkens Autobase Plus Blending Agent 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.additive.rawValue,
-            price: "2280 Р",
+            price: 2280,
             definition: """
                     376036 Autobase Plus Blending Agent 1 л.
                 
@@ -910,7 +910,7 @@ final class DataManager {
             name: "Sikkens Elast-O-Actif 1 л",
             brand: Brand.sikkens.rawValue,
             group: Group.additive.rawValue,
-            price: "2726 Р",
+            price: 2726,
             definition: """
                     376934 Elast-O-Actif 1 л.
                 
@@ -923,7 +923,7 @@ final class DataManager {
             name: "Sikkens Blend-Prep 0.326 л",
             brand: Brand.sikkens.rawValue,
             group: Group.additive.rawValue,
-            price: "1786 Р",
+            price: 1786,
             definition: """
                     517618 Blend-Prep 0.326 л.
                 
@@ -936,7 +936,7 @@ final class DataManager {
             name: "Lesonal Flexible Additive 1 л",
             brand: Brand.lesonal.rawValue,
             group: Group.additive.rawValue,
-            price: "2827 Р",
+            price: 2827,
             definition: """
                     376902 Flexible Additive 1 л.
                 
@@ -953,7 +953,7 @@ final class DataManager {
             name: "Sikkens M200 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.degreaser.rawValue,
-            price: "4697 Р",
+            price: 4697,
             definition: """
                     376050 M200 5 л.
                 
@@ -966,7 +966,7 @@ final class DataManager {
             name: "Sikkens M600 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.degreaser.rawValue,
-            price: "5295 Р",
+            price: 5295,
             definition: """
                     376943 M600 5 л.
                 
@@ -980,7 +980,7 @@ final class DataManager {
             name: "Sikkens M700 5 л",
             brand: Brand.sikkens.rawValue,
             group: Group.degreaser.rawValue,
-            price: "5669 Р",
+            price: 5669,
             definition: """
                     376945 M700 5 л.
                 
@@ -994,7 +994,7 @@ final class DataManager {
             name: "Lesonal Antistatic Degreaser SB 5 л",
             brand: Brand.lesonal.rawValue,
             group: Group.degreaser.rawValue,
-            price: "4652 Р",
+            price: 4652,
             definition: """
                     376925 Antistatic Degreaser SB 5 л.
                 
@@ -1008,7 +1008,7 @@ final class DataManager {
             name: "Wanda Wandabase SB Degreaser 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.degreaser.rawValue,
-            price: "3278 Р",
+            price: 3278,
             definition: """
                     561180 Wandabase SB Degreaser 5 л.
                 
@@ -1021,7 +1021,7 @@ final class DataManager {
             name: "Wanda Wandabase WB Degreaser 5 л",
             brand: Brand.wanda.rawValue,
             group: Group.degreaser.rawValue,
-            price: "3278 Р",
+            price: 3278,
             definition: """
                     561179 Wandabase WB Degreaser 5 л.
                 
@@ -1038,7 +1038,7 @@ final class DataManager {
             name: "Santint PA10-7",
             brand: Brand.santint.rawValue,
             group: Group.equipment.rawValue,
-            price: "Цена по запросу 📲",
+            price: 0,
             definition: """
                     2005351 Santint PA10-7
                 
@@ -1052,7 +1052,7 @@ final class DataManager {
             name: "AkzoNobel Automatchic Vision",
             brand: Brand.akzoNobel.rawValue,
             group: Group.equipment.rawValue,
-            price: "Цена по запросу 📲",
+            price: 0,
             definition: """
                     2002956 Automatchic vision
                 
@@ -1067,7 +1067,7 @@ final class DataManager {
             name: "Sartorius Evolution Scale",
             brand: Brand.sartorius.rawValue,
             group: Group.equipment.rawValue,
-            price: "Цена по запросу 📲",
+            price: 0,
             definition: """
                     2006864 Sartorius Evolution Scale
                 
@@ -1079,7 +1079,7 @@ final class DataManager {
             name: "AkzoNobel Color Universe",
             brand: Brand.akzoNobel.rawValue,
             group: Group.equipment.rawValue,
-            price: "Цена по запросу 📲",
+            price: 0,
             definition: """
                     2001459 Color Universe
                 
@@ -1095,7 +1095,7 @@ final class DataManager {
             name: "AkzoNobel Mixit",
             brand: Brand.akzoNobel.rawValue,
             group: Group.colorvation.rawValue,
-            price: "",
+            price: 0,
             definition: """
                     MIXIT - это ультрабыстрая, удобная для пользователя онлайн программа, совместимая с различными устройствами (ПК, планшет, мобильный телефон), благодаря использованию революционной облачной технологии. В ней содержатся сведения о более чем двух миллионах цветов и вариантов. Информация обновляется в реальном времени по мере появления новых цветов автомобилей.
                     В MIXIT также ведется учет всех выполненных вами заданий. Доступ к данным обеспечивается мгновенно с вашего ПК, планшета или мобильного телефона. Если вы корректируете формулу, то ваше изменение автоматически сохраняется в учетных данных.
@@ -1106,7 +1106,7 @@ final class DataManager {
             name: "AkzoNobel Mixit Pro",
             brand: Brand.akzoNobel.rawValue,
             group: Group.colorvation.rawValue,
-            price: "",
+            price: 0,
             definition: """
                     MIXIT PRO – это программное обеспечение для поиска формул и точного подбора цвета автомобиля. Устанавливается на жесткий диск вашего ПК. Имеет локальную и серверную версии.
                     Благодаря функции пошаговой помощи поиск и нахождение точной формулы становится простым и надежным.
