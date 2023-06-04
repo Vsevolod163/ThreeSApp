@@ -8,7 +8,6 @@
 import UIKit
 
 final class ProductsListViewController: UIViewController {
-    
     // MARK: - IBOutlets
     @IBOutlet private var searchBar: UISearchBar!
     @IBOutlet private var tableView: UITableView!
