@@ -100,7 +100,6 @@ final class ProductsListViewController: UIViewController {
                         self?.isButtonTapped = false
                     }
                     
-                    
                     break
                 }
             }
