@@ -49,31 +49,7 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
     }
     
     @IBAction func sendOrder() {
-        var products = ""
-        for product in productsInCart {
-            products += """
-            Товар: \(product.name ?? "")
-            Количесвто: \(product.count) шт.
-            Стоимость: \(product.price) руб.
-            \n
-            """
-        }
-        
-        if MFMailComposeViewController.canSendMail() {
-            let controller = MFMailComposeViewController()
-            controller.mailComposeDelegate = self
-            controller.setSubject("Заказ")
-            controller.setToRecipients(["vsevolod.lashin@gmail.com"])
-            controller.setMessageBody("""
-                                      Имя:
-                                      Адрес:
-                                      Заказ:
-                                      \(products)
-                                      Итого: \(totalCost) руб.
-                                      """, isHTML: false)
-         
-            present(controller, animated: true)
-        }
+        // TODO: -
     }
     
     private func fetchData() {
@@ -95,17 +71,6 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
         }
         
         totalCostLabel.text = "Итого \(totalCost) Р"
-    }
-    
-    internal func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        switch result {
-        case .cancelled, .sent, .saved:
-            controller.dismiss(animated: true, completion: nil)
-        case .failed:
-            print("Не удалось отправить письмо")
-        @unknown default:
-            break
-        }
     }
 }
     
