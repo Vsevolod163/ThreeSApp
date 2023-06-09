@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import MessageUI
 
-final class CartViewController: UIViewController {
+final class CartViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBOutlet var emptyCartLabel: UILabel!
-    @IBOutlet var cartTableView: UITableView!
     @IBOutlet var totalCostLabel: UILabel!
+    @IBOutlet var cartTableView: UITableView!
+    @IBOutlet var orderButton: UIButton!
     
     var productsInCart: [CartProduct]!
     private let storageManager = StorageManager.shared
@@ -20,6 +22,8 @@ final class CartViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         overrideUserInterfaceStyle = .light
         cartTableView.rowHeight = 130
+        orderButton.layer.cornerRadius = orderButton.frame.height / 2
+        
         fetchData()
         cartTableView.reloadData()
         
@@ -44,6 +48,34 @@ final class CartViewController: UIViewController {
         totalCostLabel.isHidden = true
     }
     
+    @IBAction func sendOrder() {
+        var products = ""
+        for product in productsInCart {
+            products += """
+            Товар: \(product.name ?? "")
+            Количесвто: \(product.count) шт.
+            Стоимость: \(product.price) руб.
+            \n
+            """
+        }
+        
+        if MFMailComposeViewController.canSendMail() {
+            let controller = MFMailComposeViewController()
+            controller.mailComposeDelegate = self
+            controller.setSubject("Заказ")
+            controller.setToRecipients(["vsevolod.lashin@gmail.com"])
+            controller.setMessageBody("""
+                                      Имя:
+                                      Адрес:
+                                      Заказ:
+                                      \(products)
+                                      Итого: \(totalCost) руб.
+                                      """, isHTML: false)
+         
+            present(controller, animated: true)
+        }
+    }
+    
     private func fetchData() {
         storageManager.fetchCartData { result in
             switch result {
@@ -63,6 +95,17 @@ final class CartViewController: UIViewController {
         }
         
         totalCostLabel.text = "Итого \(totalCost) Р"
+    }
+    
+    internal func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        switch result {
+        case .cancelled, .sent, .saved:
+            controller.dismiss(animated: true, completion: nil)
+        case .failed:
+            print("Не удалось отправить письмо")
+        @unknown default:
+            break
+        }
     }
 }
     
