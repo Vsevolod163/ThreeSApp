@@ -128,7 +128,9 @@
                                         <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Позвонить"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Позвонить">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="phoneButtonTapped" destination="2F2-yv-vka" eventType="touchUpInside" id="hR6-n1-r6K"/>
                                         </connections>
@@ -138,7 +140,9 @@
                                         <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Адрес"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Адрес">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="addressButtonPressed" destination="2F2-yv-vka" eventType="touchUpInside" id="yL7-cK-s2Y"/>
                                         </connections>
@@ -153,7 +157,9 @@
                                 <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Видео"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Видео">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="videoButtonPressed" destination="2F2-yv-vka" eventType="touchUpInside" id="8hB-9A-QKU"/>
                                 </connections>
@@ -163,7 +169,9 @@
                                 <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Определить дефект окраски"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Определить дефект окраски">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="defectButtonPressed" destination="2F2-yv-vka" eventType="touchUpInside" id="1Jz-vT-Heg"/>
                                 </connections>
@@ -295,7 +303,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Отправить заказ"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Отправить заказ">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="sendOrder" destination="ckt-zK-3EO" eventType="touchUpInside" id="dQh-n7-LMn"/>
                                 </connections>
@@ -394,7 +404,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Добавить в корзину"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить в корзину">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="addToCart" destination="fYo-0N-cLH" eventType="touchUpInside" id="fl4-Sn-17k"/>
                                 </connections>
@@ -409,7 +421,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Техническая документация"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Техническая документация">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="documentationButtonPressed" destination="fYo-0N-cLH" eventType="touchUpInside" id="fro-ot-082"/>
                                 </connections>
