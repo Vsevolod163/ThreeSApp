@@ -220,7 +220,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-Mi-HOS">
-                                <rect key="frame" x="0.0" y="109" width="320" height="332"/>
+                                <rect key="frame" x="0.0" y="109" width="320" height="390"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productInCart" rowHeight="130" id="Gum-T6-9RE" customClass="ProductTableViewCell" customModule="ThreeSApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="320" height="130"/>
@@ -294,32 +294,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOV-Ru-fQk">
-                                <rect key="frame" x="25" y="449" width="270" height="50"/>
-                                <color key="backgroundColor" red="0.27843138579999999" green="0.23921570180000001" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="y8h-cN-lNQ"/>
-                                    <constraint firstAttribute="height" constant="50" id="zcm-gL-ocA"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Отправить заказ">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="sendOrder" destination="ckt-zK-3EO" eventType="touchUpInside" id="dQh-n7-LMn"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ada-p4-JrJ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ada-p4-JrJ" firstAttribute="bottom" secondItem="xOV-Ru-fQk" secondAttribute="bottom" constant="20" id="E3B-cX-W7N"/>
                             <constraint firstItem="ErF-Mi-HOS" firstAttribute="top" secondItem="01P-p6-1nL" secondAttribute="bottom" constant="8" id="GMX-WY-yab"/>
                             <constraint firstItem="01P-p6-1nL" firstAttribute="leading" secondItem="ada-p4-JrJ" secondAttribute="leading" constant="16" id="Lpq-if-xbr"/>
+                            <constraint firstItem="ada-p4-JrJ" firstAttribute="bottom" secondItem="ErF-Mi-HOS" secondAttribute="bottom" constant="20" id="P1L-pX-JCv"/>
                             <constraint firstItem="ada-p4-JrJ" firstAttribute="trailing" secondItem="01P-p6-1nL" secondAttribute="trailing" constant="16" id="RUk-nf-h0L"/>
-                            <constraint firstItem="xOV-Ru-fQk" firstAttribute="top" secondItem="ErF-Mi-HOS" secondAttribute="bottom" constant="8" id="dVW-TC-lxO"/>
-                            <constraint firstItem="xOV-Ru-fQk" firstAttribute="centerX" secondItem="dfO-w8-Vhx" secondAttribute="centerX" id="iUP-Nz-0ES"/>
                             <constraint firstItem="ErF-Mi-HOS" firstAttribute="leading" secondItem="ada-p4-JrJ" secondAttribute="leading" id="n9K-v1-hvg"/>
                             <constraint firstItem="hMl-Fn-Qk9" firstAttribute="centerX" secondItem="dfO-w8-Vhx" secondAttribute="centerX" id="nFU-hK-HmZ"/>
                             <constraint firstItem="hMl-Fn-Qk9" firstAttribute="centerY" secondItem="dfO-w8-Vhx" secondAttribute="centerY" id="nkd-Pu-nqg"/>
@@ -338,7 +320,6 @@
                     <connections>
                         <outlet property="cartTableView" destination="ErF-Mi-HOS" id="W64-MC-wji"/>
                         <outlet property="emptyCartLabel" destination="hMl-Fn-Qk9" id="m2F-OL-HC4"/>
-                        <outlet property="orderButton" destination="xOV-Ru-fQk" id="5zr-tN-UcU"/>
                         <outlet property="totalCostLabel" destination="01P-p6-1nL" id="23s-8v-YdW"/>
                     </connections>
                 </viewController>

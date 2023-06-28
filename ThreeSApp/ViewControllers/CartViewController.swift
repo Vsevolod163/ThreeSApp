@@ -13,7 +13,6 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
     @IBOutlet var emptyCartLabel: UILabel!
     @IBOutlet var totalCostLabel: UILabel!
     @IBOutlet var cartTableView: UITableView!
-    @IBOutlet var orderButton: UIButton!
     
     var productsInCart: [CartProduct]!
     private let storageManager = StorageManager.shared
@@ -22,7 +21,6 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
     override func viewWillAppear(_ animated: Bool) {
         overrideUserInterfaceStyle = .light
         cartTableView.rowHeight = 130
-        orderButton.layer.cornerRadius = orderButton.frame.height / 2
         
         fetchData()
         cartTableView.reloadData()
@@ -46,10 +44,6 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
         cartTableView.reloadData()
         emptyCartLabel.isHidden = false
         totalCostLabel.isHidden = true
-    }
-    
-    @IBAction func sendOrder() {
-        // TODO: -
     }
     
     private func fetchData() {
