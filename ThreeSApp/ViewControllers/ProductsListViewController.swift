@@ -86,7 +86,6 @@ final class ProductsListViewController: UIViewController {
             if sender.currentTitle == currentGroup {
                 let indexPath = IndexPath(row: 0, section: index)
                 
-                
                 if buttonsStackView.arrangedSubviews.count > 1 {
                     tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                     isContentScrolled = true
