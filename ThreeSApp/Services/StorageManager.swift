@@ -85,6 +85,15 @@ final class StorageManager {
         saveContext()
     }
     
+    func deleteOneItem(_ product: CartProduct, currentProduct: CurrentProduct) {
+        guard product.count > 0 else { return }
+        
+        product.price = product.price - currentProduct.price
+        product.count = product.count - 1
+        
+        saveContext()
+    }
+    
     func delete(_ product: CartProduct) {
         viewContext.delete(product)
         
