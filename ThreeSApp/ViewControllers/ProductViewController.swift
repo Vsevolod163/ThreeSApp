@@ -49,11 +49,13 @@ final class ProductViewController: UIViewController {
         for cartProduct in cartProducts {
             if cartProduct.name == product.name {
                 storageManager.update(cartProduct, currentProduct: product)
-                fetchData()
+//                fetchData()
                 showAlert(with: "Корзина", and: "Товар добавлен в корзину")
+                
                 return
             }
         }
+        
         storageManager.createCartProduct(
             name: product.name ?? "",
             brand: product.brand ?? "",
