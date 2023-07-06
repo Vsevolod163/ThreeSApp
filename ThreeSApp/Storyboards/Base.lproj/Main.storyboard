@@ -247,30 +247,46 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTX-Dg-sP5">
-                                                    <rect key="frame" x="144" y="72.5" width="144" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nuW-Vt-oNR">
+                                                    <rect key="frame" x="182.5" y="72.5" width="121.5" height="34.5"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvx-M4-cvx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="32" height="34.5"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 шт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTX-Dg-sP5">
+                                                            <rect key="frame" x="40" y="0.0" width="39" height="34.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYz-J8-9M1">
+                                                            <rect key="frame" x="87" y="0.0" width="34.5" height="34.5"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="3gg-1B-K7O" firstAttribute="leading" secondItem="asZ-ZO-3Fs" secondAttribute="trailing" constant="8" id="3RX-QB-ZhS"/>
                                                 <constraint firstItem="R0P-pE-Dpm" firstAttribute="top" secondItem="3gg-1B-K7O" secondAttribute="bottom" constant="8" id="7Rz-Zi-rsn"/>
+                                                <constraint firstAttribute="trailing" secondItem="nuW-Vt-oNR" secondAttribute="trailing" constant="16" id="9e3-OE-qWP"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="R0P-pE-Dpm" secondAttribute="trailing" constant="16" id="AX0-hF-Yn6"/>
                                                 <constraint firstItem="asZ-ZO-3Fs" firstAttribute="top" secondItem="Rbc-Nc-8tg" secondAttribute="top" id="ECp-HW-cCv"/>
                                                 <constraint firstItem="asZ-ZO-3Fs" firstAttribute="leading" secondItem="Rbc-Nc-8tg" secondAttribute="leading" constant="16" id="HbO-UW-kTE"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="pTX-Dg-sP5" secondAttribute="trailing" constant="16" id="IYc-Db-aLF"/>
                                                 <constraint firstItem="3gg-1B-K7O" firstAttribute="top" secondItem="Rbc-Nc-8tg" secondAttribute="topMargin" constant="8" id="IuZ-5q-cmU"/>
                                                 <constraint firstAttribute="bottom" secondItem="asZ-ZO-3Fs" secondAttribute="bottom" id="Rrc-RQ-xgQ"/>
-                                                <constraint firstItem="pTX-Dg-sP5" firstAttribute="top" secondItem="R0P-pE-Dpm" secondAttribute="bottom" constant="8" id="Xfn-yC-zbf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="3gg-1B-K7O" secondAttribute="trailing" constant="16" id="knw-cg-NZj"/>
                                                 <constraint firstItem="R0P-pE-Dpm" firstAttribute="leading" secondItem="asZ-ZO-3Fs" secondAttribute="trailing" constant="8" id="lSl-Bq-be5"/>
-                                                <constraint firstItem="pTX-Dg-sP5" firstAttribute="leading" secondItem="asZ-ZO-3Fs" secondAttribute="trailing" constant="8" id="v1w-fe-oFA"/>
+                                                <constraint firstItem="nuW-Vt-oNR" firstAttribute="top" secondItem="R0P-pE-Dpm" secondAttribute="bottom" constant="8" id="v4r-nZ-zh9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="countLabel" destination="pTX-Dg-sP5" id="Nsz-cd-fTB"/>
+                                            <outlet property="addButton" destination="nYz-J8-9M1" id="kkn-CA-csF"/>
+                                            <outlet property="countLabel" destination="pTX-Dg-sP5" id="u79-GD-Xyr"/>
+                                            <outlet property="deleteButton" destination="zvx-M4-cvx" id="3Pd-Dc-9bH"/>
                                             <outlet property="nameLabel" destination="3gg-1B-K7O" id="Cyb-6z-V1C"/>
                                             <outlet property="priceLabel" destination="R0P-pE-Dpm" id="HLl-88-rfe"/>
                                             <outlet property="productImageView" destination="asZ-ZO-3Fs" id="lCS-Y9-qga"/>
