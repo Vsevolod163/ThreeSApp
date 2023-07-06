@@ -15,6 +15,8 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
     @IBOutlet var cartTableView: UITableView!
     
     var productsInCart: [CartProduct]!
+    var allProducts: [CurrentProduct]!
+    
     private let storageManager = StorageManager.shared
     private var totalCost = 0
     
@@ -22,7 +24,7 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
         overrideUserInterfaceStyle = .light
         cartTableView.rowHeight = 130
         
-        fetchData()
+        fetchCartData()
         cartTableView.reloadData()
         
         if productsInCart.isEmpty {
@@ -46,7 +48,7 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
         totalCostLabel.isHidden = true
     }
     
-    private func fetchData() {
+    private func fetchCartData() {
         storageManager.fetchCartData { result in
             switch result {
             case .success(let products):
@@ -78,8 +80,22 @@ extension CartViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productInCart", for: indexPath) as! ProductTableViewCell
         
         let product = productsInCart[indexPath.row]
-        cell.configure(with: product)
-         
+        cell.configure(withProduct: product, tableView: tableView)
+        
+        if product.count == 0 {
+            productsInCart.remove(at: indexPath.row)
+            storageManager.deleteFromCart(product)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+        }
+        
+        if productsInCart.isEmpty {
+            emptyCartLabel.isHidden = false
+            totalCostLabel.isHidden = true
+        }
+        
+        setTotalCostLabelUI()
+                
         return cell
     }
  
