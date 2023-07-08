@@ -5,7 +5,6 @@
 //  Created by Vsevolod Lashin on 02.06.2023.
 //
 
-
 final class DataManager {
     static var shared = DataManager()
     private let storageManager = StorageManager.shared
