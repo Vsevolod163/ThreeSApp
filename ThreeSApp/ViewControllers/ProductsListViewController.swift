@@ -16,6 +16,7 @@ final class ProductsListViewController: UIViewController {
     @IBOutlet private var buttonsScrollView: UIScrollView!
     
     // MARK: - Private Properties
+    private let storageManager = StorageManager.shared
     private let dataManager = DataManager.shared
     private let productsList = Product.getProducts()
     private let productGroups = Group.getAllGroups()
@@ -33,12 +34,15 @@ final class ProductsListViewController: UIViewController {
     )
     
     private var filteredData: [[CurrentProduct]] = []
+    private var cartProducts: [CartProduct]!
     private var isContentScrolled = false
     private var isButtonTapped = false
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchData()
+        
         filteredData = productsList
         overrideUserInterfaceStyle = .light
         tableView.rowHeight = 130
@@ -61,6 +65,35 @@ final class ProductsListViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
+    }
+    
+    @IBAction func addToCartButtonPressed(_ sender: UIButton) {
+        let buttonPosition = sender.convert(CGPoint.zero, to: tableView)
+        
+        if let indexPath = tableView.indexPathForRow(at: buttonPosition) {
+            let section = indexPath.section
+            let rowIndex = indexPath.row
+            
+            let currentProduct = productsList[section][rowIndex]
+            
+            for product in cartProducts {
+                if product.name == currentProduct.name {
+                    storageManager.update(product, currentProduct: currentProduct)
+                    return
+                }
+            }
+            
+            storageManager.createCartProduct(
+                name: currentProduct.name ?? "",
+                brand: currentProduct.brand ?? "",
+                group: currentProduct.group ?? "",
+                price: currentProduct.price,
+                definition: currentProduct.definition ?? "",
+                documentation: currentProduct.documentation ?? "",
+                count: 1
+            )
+            fetchData()
+        }
     }
     
     // MARK: - Private functions
@@ -101,6 +134,17 @@ final class ProductsListViewController: UIViewController {
                     
                     break
                 }
+            }
+        }
+    }
+    
+    private func fetchData() {
+        StorageManager.shared.fetchCartData { result in
+            switch result {
+            case .success(let products):
+                cartProducts = products
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }

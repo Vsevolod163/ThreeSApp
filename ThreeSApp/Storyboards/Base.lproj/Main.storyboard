@@ -75,13 +75,8 @@
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="20000"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <integer key="value" value="10"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="costButtonPressed:" destination="qF4-d4-i9c" eventType="touchUpInside" id="qqw-cI-MzD"/>
+                                                        <action selector="addToCartButtonPressed:" destination="8Ca-RY-Gqe" eventType="touchUpInside" id="Wzj-xb-dWf"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -295,9 +290,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYz-J8-9M1">
-                                                    <rect key="frame" x="274" y="86" width="30" height="25"/>
+                                                    <rect key="frame" x="274" y="87" width="30" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="EWU-AC-jFE"/>
+                                                        <constraint firstAttribute="height" constant="24" id="EWU-AC-jFE"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="a9K-5a-S5Z"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
@@ -310,10 +305,10 @@
                                                         <action selector="addItem:" destination="ckt-zK-3EO" eventType="touchUpInside" id="Kvz-m1-pnK"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 шт" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTX-Dg-sP5">
-                                                    <rect key="frame" x="216" y="91" width="50" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTX-Dg-sP5">
+                                                    <rect key="frame" x="244" y="91" width="30" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="999" constant="50" id="Vox-uH-B53"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="999" constant="30" id="Vox-uH-B53"/>
                                                         <constraint firstAttribute="height" constant="20" id="vfC-kK-jKu"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -321,7 +316,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvx-M4-cvx">
-                                                    <rect key="frame" x="178" y="86" width="30" height="25"/>
+                                                    <rect key="frame" x="214" y="86" width="30" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="XFN-od-pEU"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="cr7-Gv-WX3"/>
@@ -343,12 +338,12 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="R0P-pE-Dpm" secondAttribute="trailing" constant="16" id="AX0-hF-Yn6"/>
                                                 <constraint firstItem="asZ-ZO-3Fs" firstAttribute="top" secondItem="Rbc-Nc-8tg" secondAttribute="top" id="ECp-HW-cCv"/>
                                                 <constraint firstAttribute="trailing" secondItem="nYz-J8-9M1" secondAttribute="trailing" constant="16" id="EwZ-kH-oEN"/>
-                                                <constraint firstItem="nYz-J8-9M1" firstAttribute="leading" secondItem="pTX-Dg-sP5" secondAttribute="trailing" constant="8" id="Gwf-cx-IOW"/>
+                                                <constraint firstItem="nYz-J8-9M1" firstAttribute="leading" secondItem="pTX-Dg-sP5" secondAttribute="trailing" id="Gwf-cx-IOW"/>
                                                 <constraint firstItem="asZ-ZO-3Fs" firstAttribute="leading" secondItem="Rbc-Nc-8tg" secondAttribute="leading" constant="16" id="HbO-UW-kTE"/>
                                                 <constraint firstItem="3gg-1B-K7O" firstAttribute="top" secondItem="Rbc-Nc-8tg" secondAttribute="topMargin" constant="8" id="IuZ-5q-cmU"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="zvx-M4-cvx" secondAttribute="bottom" constant="8" id="LQ9-g1-6q1"/>
                                                 <constraint firstAttribute="bottom" secondItem="asZ-ZO-3Fs" secondAttribute="bottom" id="Rrc-RQ-xgQ"/>
-                                                <constraint firstItem="pTX-Dg-sP5" firstAttribute="leading" secondItem="zvx-M4-cvx" secondAttribute="trailing" constant="8" id="X9t-Ph-yG0"/>
+                                                <constraint firstItem="pTX-Dg-sP5" firstAttribute="leading" secondItem="zvx-M4-cvx" secondAttribute="trailing" id="X9t-Ph-yG0"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="nYz-J8-9M1" secondAttribute="bottom" constant="8" id="ZVB-o6-41f"/>
                                                 <constraint firstItem="zvx-M4-cvx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="asZ-ZO-3Fs" secondAttribute="trailing" constant="20" id="grK-E9-qgb"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="3gg-1B-K7O" secondAttribute="trailing" constant="16" id="knw-cg-NZj"/>
