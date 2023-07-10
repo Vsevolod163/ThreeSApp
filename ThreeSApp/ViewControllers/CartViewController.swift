@@ -135,7 +135,7 @@ extension CartViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "productInCart", for: indexPath) as! ProductTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productInCart", for: indexPath) as! CartProductTableViewCell
         
         let product = productsInCart[indexPath.row]
         cell.configure(withProduct: product)
