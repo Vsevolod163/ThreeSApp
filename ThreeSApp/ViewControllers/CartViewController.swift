@@ -34,9 +34,8 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
         } else {
             emptyCartLabel.isHidden = true
             totalCostLabel.isHidden = false
+            setTotalCostLabelUI()
         }
-        
-        setTotalCostLabelUI()
     }
     
     @IBAction func clearCart(_ sender: UIBarButtonItem) {
@@ -144,9 +143,9 @@ extension CartViewController: UITableViewDataSource {
         if productsInCart.isEmpty {
             emptyCartLabel.isHidden = false
             totalCostLabel.isHidden = true
+        } else {
+            setTotalCostLabelUI()
         }
-        
-        setTotalCostLabelUI()
                 
         return cell
     }
@@ -160,9 +159,9 @@ extension CartViewController: UITableViewDataSource {
              if productsInCart.isEmpty {
                  emptyCartLabel.isHidden = false
                  totalCostLabel.isHidden = true
+             } else {
+                 setTotalCostLabelUI()
              }
-             
-             setTotalCostLabelUI()
          }
      }
 }
