@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ProductViewControllerDelegate: AnyObject {
+    func getData()
+}
+
 final class ProductsListViewController: UIViewController {
     
     // MARK: - IBOutlets
@@ -57,6 +61,7 @@ final class ProductsListViewController: UIViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         guard let navigationVC = segue.destination as? UINavigationController else { return }
         let materialVC = navigationVC.topViewController as? ProductViewController
+        materialVC?.delegate = self
         
         materialVC?.product = filteredData[indexPath.section][indexPath.row]
     }
@@ -354,5 +359,12 @@ extension ProductsListViewController: UISearchBarDelegate {
             buttonsScrollView.isHidden = true
             tableView.reloadData()
         }
+    }
+}
+
+// MARK: - ProductViewControllerDelegate
+extension ProductsListViewController: ProductViewControllerDelegate {
+    func getData() {
+        fetchData()
     }
 }
