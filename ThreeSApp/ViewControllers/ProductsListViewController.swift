@@ -37,7 +37,7 @@ final class ProductsListViewController: UIViewController {
     private var cartProducts: [CartProduct]!
     private var isContentScrolled = false
     private var isButtonTapped = false
-
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ final class ProductsListViewController: UIViewController {
         
         addButtonsToStackView()
         configureButtonsInStackView()
-//        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        //        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
     // MARK: - Navigation
@@ -79,6 +79,7 @@ final class ProductsListViewController: UIViewController {
             for product in cartProducts {
                 if product.name == currentProduct.name {
                     storageManager.update(product, currentProduct: currentProduct)
+                    showAlert(with: "Корзина", and: "Товар добавлен в корзину")
                     return
                 }
             }
@@ -93,6 +94,7 @@ final class ProductsListViewController: UIViewController {
                 count: 1
             )
             fetchData()
+            showAlert(with: "Корзина", and: "Товар добавлен в корзину")
         }
     }
     
@@ -100,7 +102,7 @@ final class ProductsListViewController: UIViewController {
     @objc private func buttonTapped(_ sender: UIButton) {
         guard let subviews = buttonsStackView.arrangedSubviews as? [UIButton] else { return }
         guard !isButtonTapped else { return }
-                
+        
         isButtonTapped = true
         
         for subview in subviews {
@@ -115,7 +117,7 @@ final class ProductsListViewController: UIViewController {
         
         for index in filteredData.indices {
             let currentGroup = filteredData[index].first?.group
-
+            
             if sender.currentTitle == currentGroup {
                 let indexPath = IndexPath(row: 0, section: index)
                 
@@ -136,6 +138,14 @@ final class ProductsListViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    private func showAlert(with title: String, and message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
     
     private func fetchData() {
