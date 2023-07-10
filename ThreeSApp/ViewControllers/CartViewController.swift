@@ -65,7 +65,7 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
             
             if product.count == 0 {
                 productsInCart.remove(at: indexPath.row)
-                storageManager.deleteFromCart(product)
+                storageManager.delete(product)
                 cartTableView.deleteRows(at: [indexPath], with: .fade)
                 
                 if productsInCart.isEmpty {
@@ -153,7 +153,7 @@ extension CartViewController: UITableViewDataSource {
  
      func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
          if editingStyle == .delete {
-             storageManager.deleteFromCart(productsInCart[indexPath.row])
+             storageManager.delete(productsInCart[indexPath.row])
              productsInCart.remove(at: indexPath.row)
              tableView.deleteRows(at: [indexPath], with: .fade)
              
