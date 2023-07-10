@@ -19,37 +19,13 @@ final class ProductTableViewCell: UITableViewCell {
     
     private let storageManager = StorageManager.shared
     private var allProducts: [CurrentProduct]!
+    private var currentProduct: CurrentProduct!
     
     func configure(withProduct product: CartProduct, tableView: UITableView) {
         productImageView.image = UIImage(named: product.name ?? "")
         nameLabel.text = product.name
         priceLabel.text = "\(product.price) Р"
         countLabel.text = "\(product.count) шт"
-        
-        fetchProductsData()
-        
-        let deleteAction = UIAction() { [unowned self] _ in
-            for currentProduct in self.allProducts {
-                print(product.count)
-                if currentProduct.name == product.name {
-                    storageManager.deleteOneItem(product, currentProduct: currentProduct)
-                    tableView.reloadData()
-                }
-            }
-        }
-        
-        let addAction = UIAction() { [unowned self] _ in
-            for currentProduct in self.allProducts {
-                if currentProduct.name == product.name {
-                    print(product.count)
-                    storageManager.update(product, currentProduct: currentProduct)
-                    tableView.reloadData()
-                }
-            }
-        }
-        
-        deleteButton.addAction(deleteAction, for: .touchUpInside)
-        addButton.addAction(addAction, for: .touchUpInside)
     }
     
     private func fetchProductsData() {

@@ -50,6 +50,7 @@ final class ProductViewController: UIViewController {
             if cartProduct.name == product.name {
                 storageManager.update(cartProduct, currentProduct: product)
 //                fetchData()
+                print(1)
                 showAlert(with: "Корзина", and: "Товар добавлен в корзину")
                 
                 return
