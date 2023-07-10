@@ -18,6 +18,6 @@ final class CartProductTableViewCell: UITableViewCell {
         productImageView.image = UIImage(named: product.name ?? "")
         nameLabel.text = product.name
         priceLabel.text = "\(product.price) Р"
-        countLabel.text = "\(product.count) шт"
+        countLabel.text = String(product.count)
     }
 }

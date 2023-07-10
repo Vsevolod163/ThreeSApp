@@ -15,6 +15,7 @@ final class ProductViewController: UIViewController {
     @IBOutlet private var cartButton: UIButton!
     
     var product: CurrentProduct!
+    
     private let storageManager = StorageManager.shared
     private var cartProducts: [CartProduct]!
     

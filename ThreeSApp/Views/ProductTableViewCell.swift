@@ -17,5 +17,8 @@ final class ProductTableViewCell: UITableViewCell {
         productImageView.image = UIImage(named: product.name ?? "")
         nameLabel.text = product.name
         costButton.setTitle("\(String(product.price)) Р", for: .normal)
+        
+        costButton.layer.cornerRadius = costButton.frame.height / 2
+        costButton.clipsToBounds = true
     }
 }
