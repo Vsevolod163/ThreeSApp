@@ -15,6 +15,7 @@ final class ProductViewController: UIViewController {
     @IBOutlet private var cartButton: UIButton!
     
     var product: CurrentProduct!
+    unowned var delegate: ProductViewControllerDelegate!
     
     private let storageManager = StorageManager.shared
     private var cartProducts: [CartProduct]!
@@ -30,6 +31,11 @@ final class ProductViewController: UIViewController {
                 Цена: \(product.price) Р
             """
         fetchData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate.getData()
     }
     
     @IBAction private func swipeButtonPressed(_ sender: UIBarButtonItem) {
