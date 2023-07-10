@@ -49,36 +49,36 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
         totalCostLabel.isHidden = true
     }
     
-    
     @IBAction func deleteItem(_ sender: UIButton) {
         let buttonPosition = sender.convert(CGPoint.zero, to: cartTableView)
+        
         if let indexPath = cartTableView.indexPathForRow(at: buttonPosition) {
             let rowIndex = indexPath.row
-            print("Нажата кнопка в строке с индексом: \(rowIndex)")
             let product = productsInCart[rowIndex]
+            
             for currentProduct in allProducts {
                 if currentProduct.name == product.name {
                     storageManager.deleteOneItem(product, currentProduct: currentProduct)
+                    cartTableView.reloadData()
+                    break
                 }
-                print(product.count)
-                cartTableView.reloadData()
             }
         }
-        
     }
     
     @IBAction func addItem(_ sender: UIButton) {
         let buttonPosition = sender.convert(CGPoint.zero, to: cartTableView)
+        
         if let indexPath = cartTableView.indexPathForRow(at: buttonPosition) {
             let rowIndex = indexPath.row
-            print("Нажата кнопка в строке с индексом: \(rowIndex)")
             let product = productsInCart[rowIndex]
+            
             for currentProduct in allProducts {
                 if currentProduct.name == product.name {
                     storageManager.update(product, currentProduct: currentProduct)
+                    cartTableView.reloadData()
+                    break
                 }
-                print(product.count)
-                cartTableView.reloadData()
             }
         }
         
