@@ -59,10 +59,23 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
             for currentProduct in allProducts {
                 if currentProduct.name == product.name {
                     storageManager.deleteOneItem(product, currentProduct: currentProduct)
-                    cartTableView.reloadData()
                     break
                 }
             }
+            
+            if product.count == 0 {
+                productsInCart.remove(at: indexPath.row)
+                storageManager.deleteFromCart(product)
+                cartTableView.deleteRows(at: [indexPath], with: .fade)
+                
+                if productsInCart.isEmpty {
+                    emptyCartLabel.isHidden = false
+                    totalCostLabel.isHidden = true
+                }
+                return
+            }
+            
+            cartTableView.reloadData()
         }
     }
     
@@ -81,8 +94,6 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
                 }
             }
         }
-        
-        
     }
     
     private func fetchCartData() {
@@ -128,14 +139,7 @@ extension CartViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productInCart", for: indexPath) as! ProductTableViewCell
         
         let product = productsInCart[indexPath.row]
-        cell.configure(withProduct: product, tableView: tableView)
-        
-        if product.count == 0 {
-            productsInCart.remove(at: indexPath.row)
-            storageManager.deleteFromCart(product)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            tableView.reloadData()
-        }
+        cell.configure(withProduct: product)
         
         if productsInCart.isEmpty {
             emptyCartLabel.isHidden = false
