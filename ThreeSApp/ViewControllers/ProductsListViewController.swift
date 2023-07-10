@@ -74,7 +74,7 @@ final class ProductsListViewController: UIViewController {
             let section = indexPath.section
             let rowIndex = indexPath.row
             
-            let currentProduct = productsList[section][rowIndex]
+            let currentProduct = filteredData[section][rowIndex]
             
             for product in cartProducts {
                 if product.name == currentProduct.name {
