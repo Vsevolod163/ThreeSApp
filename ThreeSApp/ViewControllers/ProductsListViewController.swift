@@ -217,14 +217,11 @@ extension ProductsListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "product", for: indexPath)
+        guard let cell = cell as? ProductTableViewCell else { return UITableViewCell() }
+        
         cell.selectionStyle = .none
         let material = filteredData[indexPath.section]
-        var content = cell.defaultContentConfiguration()
-        content.text = material[indexPath.row].name
-        content.secondaryText = "\(material[indexPath.row].price) Р"
-        content.image = UIImage(named: material[indexPath.row].name ?? "")
-        
-        cell.contentConfiguration = content
+        cell.configure(with: material[indexPath.row])
         
         return cell
     }
