@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import MessageUI
 
-final class CartViewController: UIViewController, MFMailComposeViewControllerDelegate {
+final class CartViewController: UIViewController {
     
     @IBOutlet var emptyCartLabel: UILabel!
     @IBOutlet var totalCostLabel: UILabel!
@@ -58,6 +57,7 @@ final class CartViewController: UIViewController, MFMailComposeViewControllerDel
             for currentProduct in allProducts {
                 if currentProduct.name == product.name {
                     storageManager.deleteOneItem(product, currentProduct: currentProduct)
+                    setTotalCostLabelUI()
                     break
                 }
             }
