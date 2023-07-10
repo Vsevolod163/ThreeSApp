@@ -254,6 +254,9 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="32" height="34.5"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                                            <connections>
+                                                                <action selector="deleteItem:" destination="ckt-zK-3EO" eventType="touchUpInside" id="KWy-iu-zsE"/>
+                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 шт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTX-Dg-sP5">
                                                             <rect key="frame" x="40" y="0.0" width="39" height="34.5"/>
@@ -265,6 +268,9 @@
                                                             <rect key="frame" x="87" y="0.0" width="34.5" height="34.5"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                                            <connections>
+                                                                <action selector="addItem:" destination="ckt-zK-3EO" eventType="touchUpInside" id="Kvz-m1-pnK"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -286,7 +292,6 @@
                                         <connections>
                                             <outlet property="addButton" destination="nYz-J8-9M1" id="kkn-CA-csF"/>
                                             <outlet property="countLabel" destination="pTX-Dg-sP5" id="u79-GD-Xyr"/>
-                                            <outlet property="deleteButton" destination="zvx-M4-cvx" id="3Pd-Dc-9bH"/>
                                             <outlet property="nameLabel" destination="3gg-1B-K7O" id="Cyb-6z-V1C"/>
                                             <outlet property="priceLabel" destination="R0P-pE-Dpm" id="HLl-88-rfe"/>
                                             <outlet property="productImageView" destination="asZ-ZO-3Fs" id="lCS-Y9-qga"/>
