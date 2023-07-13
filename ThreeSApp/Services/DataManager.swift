@@ -6,6 +6,7 @@
 //
 
 final class DataManager {
+    
     static var shared = DataManager()
     private let storageManager = StorageManager.shared
     
